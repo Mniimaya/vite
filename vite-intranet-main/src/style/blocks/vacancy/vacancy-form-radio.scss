@@ -1,0 +1,19 @@
+.vacancy-form-radio {
+  display: none;
+
+  &:checked + .vacancy-form-radio-custom {
+    background: linear-gradient(70.37deg, #42805b -0.34%, #99d3a3 78.38%);
+
+    &:hover {
+      box-shadow: inset 1px 1px 5px rgb(0 0 0 / 40%);
+    }
+  }
+
+  &:checked + .vacancy-form-radio-custom::after {
+    display: flex;
+  }
+
+  &[disabled] + .vacancy-form-radio-custom {
+      opacity: 0.5;
+  }
+}

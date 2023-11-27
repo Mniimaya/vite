@@ -1,0 +1,155 @@
+.vacancy-form-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  &--additional {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &--return-back,
+  &--edit-request,
+  &--preview-vacancy,
+  &--add-location,
+  &--add-participant,
+  &--return-to-edit {
+    color: #0066b3;
+  }
+
+  &--return-to-request,
+  &--exit-from-editor {
+    color: #d71920;
+  }
+
+  &--approve,
+  &--reject,
+  &--post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 240px;
+    min-height: 30px;
+    padding: 4px 10px;
+    border: 1px solid;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    transition: all 0.3s ease;
+  }
+
+  &--approve {
+    color: #0bae2f;
+    border-color: #0bae2f;
+
+    &:hover {
+      color: #fff;
+      background-color: #0bae2f;
+    }
+  }
+
+  &--reject {
+    color: #d71920;
+    border-color: #d71920;
+
+    &:hover {
+      color: #fff;
+      background-color: #d71920;
+    }
+  }
+
+  &--post {
+    color: #006c9e;
+    border-color: #006c9e;
+
+    &:hover {
+      color: #fff;
+      background-color: #006c9e;
+    }
+  }
+
+  &--post[disabled] {
+    color: #006c9e;
+    border-color: #006c9e;
+
+    &:hover {
+      color: #006c9e;
+      background-color: #fff;
+    }
+  }
+
+  &--add-location {
+    margin-left: 40px;
+  }
+
+  &--primary,
+  &--secondary {
+    min-width: 275px;
+    min-height: 40px;
+    border-radius: 10px;
+  }
+
+  &--primary-refuse,
+  &--secondary-refuse {
+    min-width: 250px;
+    min-height: 40px;
+    border-radius: 10px;
+  }
+
+  &--primary,
+  &--primary-refuse {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #0066b3;
+    border: 1px solid #0066b3;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: radial-gradient(
+          50% 50% at 50% 50%,
+          rgba(237, 237, 237, 0.207) 0%,
+          rgba(244, 247, 252, 0) 100%
+        ),
+        #0066b3;
+    }
+  }
+
+  &--secondary,
+  &--secondary-refuse  {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0066b3;
+    background-color: transparent;
+    border: 1px solid #0066b3;
+
+    &:hover {
+      border: 1px solid #f15a22;
+      background-color: #f15a22;
+      color: #ffffff;
+    }
+  }
+
+  &--modal-return {
+    min-width: 160px;
+  }
+
+  &[disabled] {
+    cursor: default;
+    opacity: 0.5;
+  }
+}

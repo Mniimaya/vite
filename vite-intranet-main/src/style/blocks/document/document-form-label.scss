@@ -1,0 +1,12 @@
+.document-form-label {
+  display: flex;
+  margin-bottom: 5px;
+  color: #3b4255;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+
+  &--bold {
+    font-weight: 700;
+  }
+}

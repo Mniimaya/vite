@@ -1,0 +1,30 @@
+.vacancy-form-checkbox {
+  display: none;
+
+  &[disabled] + .vacancy-form-checkbox-custom {
+    opacity: 0.5;
+
+    &:hover {
+      box-shadow: inset 1px 1px 5px rgb(0 0 0 / 40%);
+    }
+  }
+
+  &:checked + .vacancy-form-checkbox-custom::after {
+    left: 17px;
+  }
+
+  &:checked + .vacancy-form-checkbox-custom {
+    background: linear-gradient(70.37deg, #42805b -0.34%, #99d3a3 78.38%);
+    box-shadow: inset 1px 1px 5px rgb(0 0 0 / 40%);
+  }
+
+  &:checked[disabled] + .vacancy-form-checkbox-custom::after {
+    left: 17px;
+  }
+
+  &:checked[disabled] + .vacancy-form-checkbox-custom {
+    background: linear-gradient(70.37deg, #42805b -0.34%, #99d3a3 78.38%);
+    box-shadow: inset 1px 1px 5px rgb(0 0 0 / 40%);
+    opacity: 0.5;
+  }
+}

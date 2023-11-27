@@ -1,0 +1,26 @@
+.form__label {
+  display: block;
+  width: 150px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #8a8c8e;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+.form__label:hover {
+  color: #f15a22;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
+
+.form__fieldset {
+  border: none;
+}

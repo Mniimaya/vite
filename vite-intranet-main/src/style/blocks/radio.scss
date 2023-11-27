@@ -1,0 +1,38 @@
+.radio {
+  margin-right: 20px;
+  border: none;
+  outline: none;
+}
+
+.radio:hover {
+  border: none;
+  outline: none;
+}
+
+.radio:active {
+  border: none;
+  outline: none;
+}
+
+.radio:focus {
+  border: none;
+  outline: none;
+}
+
+.radio:checked + .radio-mark {
+  background: linear-gradient(70.37deg, #42805b -0.34%, #99d3a3 78.38%);
+}
+
+.radio:checked + .radio-mark::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  background-color: #ffffff;
+}

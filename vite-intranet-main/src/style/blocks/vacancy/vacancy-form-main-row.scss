@@ -1,0 +1,40 @@
+.vacancy-form-main-row {
+  margin-bottom: 15px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+  }
+
+  &--date {
+    .vacancy-form-main-row__wrapper {
+      column-gap: 40px;
+    }
+  }
+
+  &--location {
+    .vacancy-form-main-row__wrapper {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &--work {
+    .vacancy-form-main-row__wrapper {
+      display: flex;
+      column-gap: 40px;
+    }
+  }
+
+  &--participants {
+    background: #E6E7E8;
+
+    .vacancy-form-main-row__wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 40px;
+    }
+  }
+}

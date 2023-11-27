@@ -1,0 +1,167 @@
+<template class="template template--participants-component">
+  <div class="vacancy-form-component vacancy-form-component--participants">
+    <div class="vacancy-form-component__inputs">
+      <div class="vacancy-form-item vacancy-form-item--with-select">
+        <label
+          class="vacancy-form-label vacancy-form-label--normal vacancy-helpers-required"
+          >Роль</label
+        >
+        <select
+          class="vacancy-form-select vacancy-form-select--role vacancy-form-select--medium"
+          name="role[]"
+        >
+          <option value="" selected="" class="vacancy-form-option">
+            Выберите
+          </option>
+          <option value="1" disabled>Заявитель</option>
+          <option value="2">Согласующий руководитель</option>
+          <option value="3">HR</option>
+          <option value="4">Наблюдатель</option>
+        </select>
+        <p class="vacancy-form-error">Выберите один из вариантов</p>
+      </div>
+      <div class="vacancy-form-item vacancy-form-item--with-input">
+        <label
+          class="vacancy-form-label vacancy-form-label--normal vacancy-helpers-required"
+          >ФИО</label
+        >
+        <div class="vacancy-form-item__wrapper">
+          <input
+            type="text"
+            class="vacancy-form-input vacancy-form-input--fullname vacancy-form-input--medium"
+            name="full_name[]"
+          />
+          <button
+            class="vacancy-form-button vacancy-form-button--clear vacancy-helpers-hidden"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <circle cx="9" cy="9" r="9" fill="#8A8C8E"></circle>
+              <path
+                d="M13 5L5.00007 12.9999"
+                stroke="white"
+                stroke-width="2"
+              ></path>
+              <path
+                d="M13 13.0005L5.00007 5.00055"
+                stroke="white"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </button>
+          <ul
+            class="vacancy-participants-search-list vacancy-helpers-hidden"
+          ></ul>
+        </div>
+        <p class="vacancy-form-error">Поле не заполнено</p>
+      </div>
+    </div>
+    <div class="vacancy-form-component__checkboxs">
+      <div class="vacancy-form-item vacancy-form-item--with-checkbox">
+        <label class="vacancy-form-label vacancy-form-label--with-checkbox">
+          <input
+            type="checkbox"
+            class="vacancy-form-checkbox vacancy-form-checkbox--is-view"
+            name="is_view[]"
+          />
+          <span class="vacancy-form-checkbox-custom"></span>
+          <span class="vacancy-form-label__text">Просмотр кандидатов</span>
+        </label>
+      </div>
+      <div class="vacancy-form-item vacancy-form-item--with-checkbox">
+        <label class="vacancy-form-label vacancy-form-label--with-checkbox">
+          <input
+            type="checkbox"
+            class="vacancy-form-checkbox vacancy-form-checkbox--is-interview"
+            name="is_interview[]"
+          />
+          <span class="vacancy-form-checkbox-custom"></span>
+          <span class="vacancy-form-label__text">Участие в интервью</span>
+        </label>
+      </div>
+    </div>
+    <div class="vacancy-form-component__actions">
+      <button
+        class="vacancy-form-button vacancy-form-button--delete-participants"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <g opacity="0.9">
+            <path
+              d="M18.4336 5L4.99857 18.435"
+              stroke="#D71920"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M18.4336 18.4351L4.99857 5.00003"
+              stroke="#D71920"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <div class="vacancy-form-component__hidden vacancy-helpers-hidden">
+      <input
+        type="hidden"
+        name="id_participant[]"
+        class="vacancy-form-input vacancy-form-input--id"
+      />
+      <input
+        type="hidden"
+        name="id_request[]"
+        class="vacancy-form-input vacancy-form-input--id-request"
+      />
+      <input
+        type="hidden"
+        name="account_number[]"
+        class="vacancy-form-input vacancy-form-input--account-number"
+      />
+      <input
+        type="hidden"
+        name="position[]"
+        class="vacancy-form-input vacancy-form-input--position"
+      />
+      <input
+        type="hidden"
+        name="avatar_src[]"
+        class="vacancy-form-input vacancy-form-input--avatar-src"
+      />
+      <input
+        type="hidden"
+        name="is_approve[]"
+        class="vacancy-form-input vacancy-form-input--is-approve"
+      />
+      <input
+        type="hidden"
+        name="status_participant[]"
+        class="vacancy-form-input vacancy-form-input--status"
+      />
+      <input
+        type="hidden"
+        name="reason_reject[]"
+        class="vacancy-form-input vacancy-form-input--reason-reject"
+      />
+      <input
+        type="hidden"
+        name="is_edited"
+        value="0"
+        class="vacancy-form-input vacancy-form-input--is-edited"
+      />
+    </div>
+  </div>
+</template>

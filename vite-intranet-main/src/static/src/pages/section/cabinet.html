@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <!DOCTYPE html>
+  <html class="page" lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Интранет ФКУ "Налог-сервис"</title>
+    </head>
+
+    <body class="page__body">
+      <div class="body-container">
+        <%= require('html-loader!../components/header.html').default %>
+        <main class="main main-profile">
+          <div class="main__wrapper">
+            <section class="intro">
+              <div class="intro__content">
+                <div class="container">
+                  <h1 class="intro__title">Личный кабинет</h1>
+                </div>
+              </div>
+            </section>
+            <section class="cabinet container">
+              <ul class="cabinet__list">
+                <li
+                  class="cabinet__item cabinet__item--user"
+                  title="Перейти в мой профиль"
+                >
+                  <a
+                    href="/service/profile.html"
+                    class="cabinet__link cabinet__link--user"
+                  >
+                    <div class="cabinet__info">
+                      <img
+                        class="cabinet__avatar"
+                        src="<%=require('/src/assets/img/cabinet/avatar.svg')%>"
+                        alt="Аватарка."
+                        width="80"
+                        height="150"
+                      />
+                      <div class="cabinet__wrapper">
+                        <h2 class="cabinet__cn">ФИО</h2>
+                        <span class="cabinet__title"></span>
+                        <!-- <span class="cabinet__work-experience">Стаж <b></b>
+                        <b></b> месяца </span> -->
+                        <span class="cabinet__work"></span>
+                        <span class="cabinet__number"></span>
+                        <span class="cabinet__mail"></span>
+                      </div>
+                    </div>
+                    <div class="cabinet__wrapper">
+                      <span class="cabinet__department"></span>
+                      <span class="cabinet__company"></span>
+                    </div>
+                  </a>
+                </li>
+                <li class="cabinet__item cabinet__item--admin">
+                  <a
+                    href="/service/administrator.html"
+                    title="Перейти в раздел администратора"
+                  >
+                    <span></span>
+                    <p>Администратор</p>
+                  </a>
+                </li>
+                <li class="cabinet__item cabinet__item--admin">
+                  <a
+                    href="/service/profile-search.html"
+                    title="Перейти в раздел профилей пользователей"
+                  >
+                    <span></span>
+                    <p>Профили пользователей</p>
+                  </a>
+                </li>
+                <li class="cabinet__item cabinet__item--vacancy">
+                  <a
+                    href="/section/vacancy.html"
+                    title="Перейти в раздел вакансий"
+                  >
+                    <span></span>
+                    <p>Вакансии</p>
+                  </a>
+                </li>
+                <li class="cabinet__item cabinet__item--relax">
+                  <a
+                    href="/service/weekend.html"
+                    title="Перейти в раздел оздоровительных комплексов ФНС России"
+                  >
+                    <span></span>
+                    <p>Оздоровительный комплекс ФНС России</p>
+                  </a>
+                </li>
+                <li class="cabinet__item cabinet__item--news">
+                  <a
+                    href="/service/news.html"
+                    title="Перейти в раздел новостей"
+                  >
+                    <span></span>
+                    <p>Новости</p>
+                  </a>
+                </li>
+                <li class="cabinet__item cabinet__item--guide">
+                  <a
+                    href="/section/phone.html"
+                    title="Перейти в раздел телефонного справочника"
+                  >
+                    <span></span>
+                    <p>Телефонный справочник</p>
+                  </a>
+                </li>
+                <li class="cabinet__item cabinet__item--statistics">
+                  <a
+                    href="/section/statistic.html"
+                    title="Перейти в раздел статистики"
+                  >
+                    <span></span>
+                    <p>Статистика</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </main>
+        <%= require('html-loader!../components/footer.html').default %>
+      </div>
+    </body>
+  </html>
+</html>

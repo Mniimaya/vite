@@ -1,0 +1,29 @@
+.vacancy-participants-search-list {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #3b4255;
+  color: #ffffff;
+  max-height: 342px;
+  overflow: auto;
+
+  &__item {
+    padding: 10px 10px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+  }
+
+  &__fullname,
+  &__company,
+  &__department {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}

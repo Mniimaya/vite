@@ -1,0 +1,416 @@
+.vacancy-card {
+  display: flex;
+  width: 1300px;
+  margin: 0 auto;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(29, 47, 73, 0.1);
+  color: $color-blue-dark;
+  text-decoration: none;
+  transition: all 0.5s ease;
+
+  &__wrapper {
+    width: 100%;
+    padding: 20px 40px;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 15px 0px rgb(29 47 73 / 40%);
+  }
+
+  &--main {
+    .vacancy-card__wrapper {
+      display: flex;
+    }
+
+    .vacancy-card__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      row-gap: 5px;
+      width: 340px;
+      margin-right: 20px;
+    }
+
+    .vacancy-card__details {
+      width: 300px;
+      margin-left: auto;
+    }
+
+    .vacancy-card__date {
+      display: flex;
+      column-gap: 5px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #bfc3c7;
+    }
+
+    .vacancy-card__title {
+      color: $color-blue-dark;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    .vacancy-card__addresses-item {
+      display: flex;
+      align-items: center;
+      column-gap: 7px;
+      color: $color-blue-dark;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .vacancy-card__addresses-icon {
+      padding-top: 2px;
+    }
+
+    .vacancy-card__actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .vacancy-card__actions-hr {
+      display: flex;
+      column-gap: 5px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #bfc3c7;
+    }
+
+    .vacancy-card__actions-buttons {
+      display: flex;
+      column-gap: 25px;
+    }
+
+    .vacancy-card__details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    .vacancy-card__details-salary {
+      margin-bottom: 4px;
+    }
+
+    .vacancy-card__details-experience-label {
+      color: $color-blue-dark;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .vacancy-card__details-salary-title,
+    .vacancy-card__details-salary-taxes {
+      color: $color-blue-dark;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .vacancy-card__details-salary-value {
+      color: $color-blue;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .vacancy-card__details-experience-value {
+      color: $color-blue;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .vacancy-card__details-metro-item {
+      display: flex;
+      column-gap: 10px;
+      color: $color-blue-dark;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &--request {
+    .vacancy-card__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .vacancy-card__main {
+      max-width: 50%;
+    }
+
+    .vacancy-card__company {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      margin-bottom: 10px;
+    }
+
+    .vacancy-card__company-value {
+      color: $color-blue-dark;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+    }
+
+    .vacancy-card__intro-title {
+      margin-bottom: 10px;
+      color: $color-blue-dark;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    .vacancy-card__department {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+
+      color: #bfc3c7;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .vacancy-card__actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .vacancy-card__actions-top {
+      display: flex;
+      justify-content: flex-end;
+      column-gap: 25px;
+    }
+
+    .vacancy-card__actions-bottom {
+      display: flex;
+      justify-content: flex-end;
+      column-gap: 25px;
+    }
+  }
+
+  &--reply,
+  &--resume-database {
+    .vacancy-card__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .vacancy-card__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .vacancy-card__date {
+      color: #bfc3c7;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .vacancy-card__actions {
+      display: flex;
+      align-items: center;
+      column-gap: 25px;
+    }
+
+    .vacancy-card__bottom {
+      display: flex;
+    }
+
+    .vacancy-card__personal {
+      width: 240px;
+      display: flex;
+      flex-shrink: 0;
+      margin-right: 170px;
+    }
+
+    .vacancy-card__personal-avatar {
+      display: flex;
+      margin-right: 15px;
+      width: 45px;
+      height: 45px;
+
+      img {
+        border-radius: 50%;
+        box-shadow: 0px 0px 6px 0px rgba(29, 47, 73, 0.4);
+      }
+    }
+
+    .vacancy-card__personal-details {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+    }
+
+    .vacancy-card__personal-fullname {
+      color: $color-blue;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .vacancy-card__personal-age {
+      color: $color-blue-dark;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .vacancy-card__about {
+      min-width: 175px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      margin-right: 15px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .vacancy-card__about-text {
+      color: $color-blue-dark;
+    }
+
+    .vacancy-card__about-link {
+      color: $color-blue;
+      text-decoration: underline;
+    }
+
+    .vacancy-card__address {
+      min-width: 255px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      margin-right: 15px;
+    }
+
+    .vacancy-card__address-label {
+      color: $color-blue-dark;
+    }
+
+    .vacancy-card__address-value {
+      color: #bfc3c7;
+    }
+
+    .vacancy-card__letter {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .vacancy-card__letter-label {
+      color: $color-blue-dark;
+    }
+
+    .vacancy-card__letter-value {
+      color: #bfc3c7;
+    }
+
+    .vacancy-card__letter-link {
+      color: $color-blue;
+      text-decoration: underline;
+    }
+  }
+
+  &--resume-database {
+    .vacancy-card__top {
+      justify-content: flex-end;
+    }
+
+    .vacancy-card__personal {
+      width: 605px;
+      margin-right: 0;
+    }
+  }
+
+  &--archive,
+  &--draft,
+  &--expired {
+    .vacancy-card__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .vacancy-card__main {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+    }
+
+    .vacancy-card__header {
+      display: flex;
+      align-items: center;
+      column-gap: 70px;
+    }
+
+    .vacancy-card__title {
+      width: 340px;
+      color: $color-blue-dark;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    .vacancy-card__actions {
+      display: flex;
+      column-gap: 25px;
+    }
+
+    .vacancy-card__about {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .vacancy-card__applicant {
+      color: $color-blue-dark;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .vacancy-card__date {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &--archive {
+    .vacancy-card__date {
+      color: $color-red;
+    }
+  }
+
+  &--draft {
+    .vacancy-card__date {
+      color: #bfc3c7;
+    }
+  }
+
+  &--expired {
+    .vacancy-card__date {
+      color: $color-red;
+    }
+  }
+}

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../components/header.html').default %>
+      <main class="main">
+        <section class="intro">
+          <div class="intro__content">
+            <div class="container">
+              <h1 class="intro__title">Актуальная версия сайта 0.9.18</h1>
+
+            </div>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.20 от 03.07.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">
+                endpoint уведомлений валидация существующей записи в БД
+              </li>
+              <li class="version__item">PGSQL -> driver 587</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.19 от 02.05.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">LDAP linux</li>
+              <li class="version__item">PGSQL -> TOP/LIMIT, connect</li>
+              <li class="version__item">Сервис уведомления</li>
+              <li class="version__item">Сервис сообщения</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.19 от 02.05.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">
+                /connect/vacancy/api/postApprove.php согласиться и добавить
+                пользователей
+              </li>
+              <li class="version__item">
+                /connect/vacancy/api/postReject.php отказаться и добавить
+                пользователей
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.18 от 14.04.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">
+                <a
+                  href="https://service-ktirw.dpc.tax.nalog.ru/connect/vacancy/api/gettitles.php"
+                  class=""
+                  >Должности</a
+                >
+              </li>
+              <li class="version__item">
+                <a
+                  href="https://service-ktirw.dpc.tax.nalog.ru/connect/vacancy/api/getdepartments.php"
+                  class=""
+                  >Департаменты</a
+                >
+              </li>
+              <li class="version__item">
+                <a
+                  href="https://service-ktirw.dpc.tax.nalog.ru/admin/review.html"
+                  class=""
+                  >Страничка админа с отзывами</a
+                >
+              </li>
+              <li class="version__item">
+                Backend эндпоинты создать, поменять статус
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.18 от 14.04.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">
+                https://service-ktirw.dpc.tax.nalog.ru/admin/review.php
+              </li>
+              <li class="version__item">
+                Авторизация, сессия открывается на 10 часов, потом сбрасывается
+              </li>
+              <li class="version__item">
+                Переписана логика работы с глобальными переменнамы, которые
+                ранее передавались с сервера теперь из сессии
+              </li>
+              <li class="version__item">
+                Данные по умолчанию в санаториях при бронировании
+              </li>
+              <li class="version__item">
+                https://service-ktirw.dpc.tax.nalog.ru/admin/vacancy/postMessage.html
+                тестовая ручка по размещению
+              </li>
+              <li class="version__item">
+                https://service-ktirw.dpc.tax.nalog.ru/admin/vacancy/postRequest.html
+                тестовая ручка по размещению
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.17 от 10.04.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">
+                Настройка webpack, разработка в реалтайм на сервере, билд в
+                папку дист, прода в папке продакшн
+              </li>
+              <li class="version__item">
+                Весь проект в папке src работает без php, после авторизации и
+                показа можно отказаться от PHP
+              </li>
+              <li class="version__item">
+                <b>TODO</b>при переходе на webpackserve перенести сервис с
+                вакансиями, стили по вакансиям, изменить ручки в вакансиях в src
+              </li>
+              <li class="version__item">
+                <b>TODO</b>при отказе от win auth переписать логику роелей на
+                санаториях, новостях, личного кабинета, статистики
+              </li>
+              <li class="version__item">
+                Бэкенд ручки getMain - получить заявки, postRequests - отправить
+                новую
+              </li>
+              <li class="version__item">
+                https://service-ktirw.dpc.tax.nalog.ru/section/admin/vacancy/postRequests.php
+                тестовая ручка по размещению
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.16 от 31.03.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">
+                Редизайн актуальный заявок, путевок и архива
+              </li>
+              <li class="version__item">Рефакторинг логики для трех страниц</li>
+              <li class="version__item">Лоадер и новые ручки санаториев</li>
+              <li class="version__item">
+                Рефакторинг и стилизация поиска санаториев
+              </li>
+              <li class="version__item">
+                Установка Node, NPM, git и настройка для командной работы и
+                версионности на 587
+              </li>
+              <li class="version__item">
+                Настройка зависимостей AutoRenameTag, Beautify, EditorConfig,
+                EsLint, LiveServer, PHPIntelephense, Prettier, Brackets
+              </li>
+              <li class="version__item">
+                Настройка вебпак бандлера для работы со стилями и компонентами
+                страниц для отказа от php
+              </li>
+              <li class="version__item">
+                Переход со страницы отели на страницу путевок по кнопке
+                доступные путевки с готовой логикой сортировки
+              </li>
+              <li class="version__item">Сборка CKeditor</li>
+              <li class="version__item">
+                Рефакторинг верстки в новостях, в архиве, все попапы, на
+                главной, на главной попап, у модератора, попап модератора, все
+                textarea заменены на contenteditable
+              </li>
+              <li class="version__item">
+                Написана логика редактирования текста при выделении текста, при
+                создании и при модерации новости
+              </li>
+              <li class="version__item">Написание логики для поделиться</li>
+              <li class="version__item">
+                Горячая путевка размещение, АПИ, SQL weekend поля super и поле
+                login
+              </li>
+              <li class="version__item">
+                Дизайн логика бронирования, редактирования
+              </li>
+              <li class="version__item">
+                Горящая путевка, половина путевки дизайн и логика уже на этапе
+                бронирования
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.15 от 21.03.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">мультистраничные санатории</li>
+              <li class="version__item">мультистраничные новости</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.14 от 13.03.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">слайдер на главной в темной теме</li>
+              <li class="version__item">стрелки темные свг тестовый вариант</li>
+              <li class="version__item">
+                попап новостей актуальные, все, на рассмотрении
+              </li>
+              <li class="version__item">попап новостей главная</li>
+              <li class="version__item">
+                актуальные, все и новости на модерации стиль карточки
+              </li>
+              <li class="version__item">главная вакансии</li>
+              <li class="version__item">новые новости</li>
+              <li class="version__item">чипсы ховер</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.13 от 06.03.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">табы чипсы санатории</li>
+              <li class="version__item">табы чипсы новости</li>
+              <li class="version__item">баттоны создать путевку</li>
+              <li class="version__item">баттоны актуальные заявки отклонить</li>
+              <li class="version__item">
+                баттоны льготные путевки редактировать
+              </li>
+              <li class="version__item">
+                баттоны льготные путевки забронировать
+              </li>
+              <li class="version__item">
+                баттоны подтвержденные заявки редактировать комментарии
+              </li>
+              <li class="version__item">чекбоксы путевки стили</li>
+              <li class="version__item">сервисы на главной стили</li>
+              <li class="version__item">страница с отзывом о сайте</li>
+              <li class="version__item">санатории инпут поиска</li>
+              <li class="version__item">новости на рассмотрении форма</li>
+              <li class="version__item">новости создать форма</li>
+              <li class="version__item">сервисы инпут поиск</li>
+              <li class="version__item">
+                NGINX config -> php -> php-fpm -> error_log nginx, error_log
+                php, PGsql user and roles, API frontend connect, PDO driver, GR
+                download
+              </li>
+              <li class="version__item">
+                <a href="http://n7701-ktr585.dpc.tax.nalog.ru/">start linux</a>
+              </li>
+              <li class="version__item">
+                <b>todo:</b> sniff, gzip, cache, ssl https, Windows Auth, GR
+                save
+              </li>
+              <li class="version__item">debag guest and user</li>
+              <li class="version__item">dropdown header style</li>
+              <li class="version__item">форма размещения новой путевки</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.12 от 20.02.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">AUTH API</li>
+              <li class="version__item">Личный кабинет</li>
+              <li class="version__item">
+                refactor news, weekend parent->closest
+              </li>
+              <li class="version__item">Опрос №002</li>
+              <li class="version__item">
+                Поиск по имени в телефонном справочнике
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.11 от 30.01.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">Страница сервисов update</li>
+              <li class="version__item">Страница менеджеров update</li>
+              <li class="version__item">Страница со структурой</li>
+              <li class="version__item">Страница с отзывом</li>
+              <li class="version__item">Поиск по сервисам</li>
+              <li class="version__item">Иконки и ссылки на главной</li>
+              <li class="version__item">Интро на страницах</li>
+              <li class="version__item">
+                API news, phone, statistic, vote, weekend
+              </li>
+              <li class="version__item">IE explorer popup damage</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.10 от 23.01.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">Страница документов</li>
+              <li class="version__item">Страница сервисов</li>
+              <li class="version__item">Страница вакансий</li>
+              <li class="version__item">
+                Линк на новость на странице новостей
+              </li>
+              <li class="version__item">header</li>
+              <li class="version__item">footer</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.9 от 17.01.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">Фича: новость линк поделиться</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.8 от 09.01.2023</h2>
+            <ul class="version__list">
+              <li class="version__item">Поиск по отделу</li>
+              <li class="version__item">Поиск по отделам в истории</li>
+              <li class="version__item">
+                Устранение багов с компаниями при событии change
+              </li>
+              <li class="version__item">Excel</li>
+              <li class="version__item">
+                Daily Update DB Active Directory 3:00
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.7 от 23.12.2022</h2>
+            <ul class="version__list">
+              <li class="version__item">Поиск по СОНО</li>
+              <li class="version__item">Сброс</li>
+              <li class="version__item">Добавил информацию о ФНС</li>
+              <li class="version__item">
+                Разделил логику поиска по соно и по компании
+              </li>
+              <li class="version__item">Исправил О нас в хедере</li>
+              <li class="version__item">Страница О Нас со стилями</li>
+              <li class="version__item">Страница Руководство со стилями</li>
+              <li class="version__item">История скрыть/показать</li>
+              <li class="version__item">Компания вместо соно</li>
+              <li class="version__item">
+                Статичный бэкграунд с привязкой к URL
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.6 от 19.12.2022</h2>
+            <ul class="version__list">
+              <li class="version__item">
+                Оптимизация скорости поиска при submit
+              </li>
+              <li class="version__item">
+                Поиск от двух символов, если найдено 0 записей ищет дальше
+              </li>
+              <li class="version__item">Уведомление если ничего не найдено</li>
+              <li class="version__item">Вывод департаментов у начальников</li>
+              <li class="version__item">
+                Изолировал предыдущие подключения к БД, необходимо вернуться к
+                алгоритму поиску если все ок и снести
+              </li>
+              <li class="version__item">Сохранение истории в Локалсторадж</li>
+              <li class="version__item">
+                Алгоритм удаления дубликата и запись в начале списка
+              </li>
+              <li class="version__item">
+                Отрисовка истории и создание темплейтов
+              </li>
+              <li class="version__item">
+                Очистка поиска при кликах на информацию
+              </li>
+              <li class="version__item">
+                Логика записи в историю мульти результата из БД
+              </li>
+              <li class="version__item">
+                Удаление дубликатов из локалсторадж, запись в локалсторадж в
+                начало списка
+              </li>
+              <li class="version__item">Баг с руководителем</li>
+              <li class="version__item">
+                добавил поиск по отделу в инпуте если выбран соно
+              </li>
+              <li class="version__item">
+                добавил вывод и поиск по отделу из истории
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.5 от 13.12.2022</h2>
+            <ul class="version__list">
+              <li class="version__item">Настройка компилятора PHP-cgi</li>
+              <li class="version__item">
+                PHP config(max uploads, ext dir, syslog, pdo)
+              </li>
+              <li class="version__item">
+                Настройка прав DPC\N7701-KTR587$ в MSSQL
+              </li>
+              <li class="version__item">MYSQL PDO MYSQLI -> PDO MSSQL</li>
+              <li class="version__item">Драйвера OLE DB, ODBC</li>
+              <li class="version__item">SMALL INt -> INT</li>
+              <li class="version__item">MIME types server</li>
+              <li class="version__item">Virtual Storage GR</li>
+              <li class="version__item">PHP connect GR</li>
+              <li class="version__item">GivenName CN</li>
+              <li class="version__item">TNO, MIFNS, CA, FKU, COD</li>
+              <li class="version__item">ldap 1 entry</li>
+              <li class="version__item">start update bat</li>
+              <li class="version__item">ABC search</li>
+              <li class="version__item">Структура БД в части департаментов</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.4 от 28.11.2022</h2>
+            <ul class="version__list">
+              <li class="version__item">ФНС</li>
+              <li class="version__item">Карта fixed</li>
+              <li class="version__item">Обновил подчиненность</li>
+              <li class="version__item">Баг с дублированием</li>
+              <li class="version__item">Поиск</li>
+              <li class="version__item">
+                Сократил header, intro в телефонном справочнике
+              </li>
+              <li class="version__item">Lineheight инфо</li>
+              <li class="version__item">Динамический интро</li>
+              <li class="version__item">Поиск по отделу, отчество убрал</li>
+              <li class="version__item">баг с поиском по соно</li>
+              <li class="version__item">кнопка наверх</li>
+              <li class="version__item">аватар</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.3 от 21.11.2022</h2>
+            <ul class="version__list">
+              <li class="version__item">Подробнее на главной</li>
+              <li class="version__item">Copyright popup</li>
+              <li class="version__item">Телефонный справочник</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.2 от 03.11.2022</h2>
+            <ul class="version__list">
+              <li class="version__item">
+                Добавлены кнопки на главной, сделаны как компонент
+              </li>
+              <li class="version__item">
+                Линейная структура сайта исправлена на вертикальную. Разделена
+                логика секции и сервисы. Изменены все рабочие ссылки
+              </li>
+              <li class="version__item">
+                Исправлен баг рабочих ссылок из льготных путевок
+              </li>
+              <li class="version__item">Dropdown по правому краю</li>
+              <li class="version__item">
+                Вернул форматирование изображений на object-fit
+              </li>
+              <li class="version__item">Фиксированная ширина на weekend.php</li>
+              <li class="version__item">single DB connect</li>
+              <li class="version__item">Счетчик на внутренних страницах</li>
+              <li class="version__item">Флексбокс сервисов на главной</li>
+              <li class="version__item">strict mode, type="module", DRY</li>
+              <li class="version__item">
+                статистика подключение к БД, формирование и вывод информации
+              </li>
+              <li class="version__item">ссылки-заголовки</li>
+              <li class="version__item">лайки-просмотры font-weight 400</li>
+              <li class="version__item">баги номера uprow</li>
+              <li class="version__item">Шрифты ttf, предзагрузка 0.01</li>
+              <li class="version__item">popup copyright</li>
+              <li class="version__item">баги links services popular</li>
+            </ul>
+          </div>
+        </section>
+        <section class="version">
+          <div class="version__wrapper">
+            <h2 class="version__title">0.9.1 от 01.11.2022</h2>
+            <ul class="version__list">
+              <li class="version__item">Отрисован логотип в header</li>
+              <li class="version__item">
+                Установлена максимальная ширина контента на разных страницах
+                1300px
+              </li>
+              <li class="version__item">
+                Изменены шрифты хеддера и ширина дропдаун
+              </li>
+              <li class="version__item">
+                Добавлен блок на главную с популярными ссылками
+              </li>
+              <li class="version__item">
+                Добавлены стили, иконки и состояния популярных ссылок
+              </li>
+              <li class="version__item">
+                Изменено расположение и вложенность блоков на главной
+              </li>
+              <li class="version__item">Один футер на все страницы</li>
+              <li class="version__item">404 и 500 заглушка</li>
+              <li class="version__item">
+                Заглушка "Страница находится на этапе разработки"
+              </li>
+              <li class="version__item">Изменена структура футера</li>
+              <li class="version__item">Создана страница версий</li>
+              <li class="version__item">
+                Исправлена информация в апроу контакты и социальные сети
+              </li>
+              <li class="version__item">Исправлена стили апроу</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <%= require('html-loader!../components/footer.html').default %>
+    </div>
+  </body>
+</html>

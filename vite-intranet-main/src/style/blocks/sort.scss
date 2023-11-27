@@ -1,0 +1,144 @@
+@import "../common/variables.scss";
+
+.sort {
+  position: fixed;
+  top: 59%;
+  transform: translate(-100%, -50%);
+  width: 255px;
+  background-color: #ffffff;
+  z-index: 20;
+  border-radius: 0 20px 20px 0px;
+  padding: 30px;
+  transition: all 0.5s ease;
+
+  .toggle-side__text {
+    opacity: 1;
+  }
+
+  .toggle-side__mark::before {
+    transform: rotate(90deg);
+  }
+
+  &.js-active {
+    transform: translate(0, -50%);
+
+    .toggle-side__text {
+      opacity: 0;
+    }
+
+    .toggle-side__mark::before {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.sort__wrapper-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  .sort__clear-form {
+    background-color: transparent;
+    border: none;
+    color: $color-red;
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    cursor: pointer;
+  }
+}
+
+.sort__form {
+  display: flex;
+  flex-direction: column;
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.sort__headline {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.sort__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort__fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.sort__fieldset--search {
+  display: flex;
+  flex-direction: column;
+}
+
+.sort__legend {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 10px;
+  text-align: left;
+  display: block;
+}
+
+.sort__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: left;
+  row-gap: 10px;
+}
+
+.sort__input--date {
+  margin-bottom: 10px;
+}
+
+.sort__btn {
+  // position: relative;
+  // border-radius: 50%;
+  // width: 150px;
+  // background-color: transparent;
+  // box-shadow: none;
+  // padding: 5px 20px;
+  // cursor: pointer;
+  // font-size: 20px;
+  // line-height: 1.2;
+  // color: #3b4256;
+  // border: none;
+  // transition: all 0.5s ease;
+  // text-decoration: none;
+}
+
+.sort__btn:hover {
+  // color: #f15a22;
+}
+
+.sort__icon {
+  fill: #000000;
+  stroke: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.sort__btn:hover .sort__icon {
+  fill: #ffffff;
+  stroke: #ffffff;
+}

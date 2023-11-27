@@ -1,0 +1,33 @@
+.archive {
+  width: 100%;
+}
+
+.archive__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.archive__header {
+  border: 1px solid #3b4256;
+  color: #ffffff;
+  background-color: #3f79bd;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 16px 3px;
+}
+
+.archive__case {
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 3px 5px;
+  border: 1px solid #3f79bd;
+  cursor: pointer;
+  text-align: left;
+}
+
+.archive__row:hover {
+  background-color: #c9ced1;
+  color: #ffffff;
+}

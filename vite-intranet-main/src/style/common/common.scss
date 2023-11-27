@@ -1,0 +1,52 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+  color: #3b4256;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container__flex {
+  display: flex;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}

@@ -1,0 +1,15 @@
+.label-radio {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3b4255;
+  cursor: pointer;
+  position: relative;
+}
+
+.label-radio:hover .radio-mark {
+  border: 1px solid #f15a22;
+}

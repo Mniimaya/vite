@@ -1,0 +1,156 @@
+.modal-archive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255, 0.95);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 20;
+}
+
+.modal-archive__container {
+  background-color: #ffffff;
+  margin: auto;
+  max-width: 800px;
+  padding: 50px;
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 7%);
+}
+
+.modal-archive__container:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+}
+
+.modal-archive__title {
+  font-size: 38px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.modal-archive__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  background-color: #ffffff;
+}
+
+.modal-archive__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.modal-archive__label {
+  display: block;
+  width: 35%;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #8a8c8e;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.modal-archive__label:hover {
+  color: #f15a22;
+}
+
+.modal-archive__input {
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px dotted #3b4256;
+}
+
+.modal-archive__input:hover {
+  cursor: text;
+  outline: 1px solid #f15a22;
+  border: 1px dotted transparent;
+  border-radius: 3px;
+}
+
+.modal-archive__input:focus {
+  outline: 2px solid #f15a22;
+  border: 1px dotted transparent;
+  border-radius: 3px;
+}
+
+.modal-archive__input--radio {
+  margin-right: 20px;
+  border: none;
+  outline: none;
+}
+
+.modal-archive__input--radio:hover {
+  border: none;
+  outline: none;
+}
+
+.modal-archive__input--radio:active {
+  border: none;
+  outline: none;
+}
+
+.modal-archive__input--radio:focus {
+  border: none;
+  outline: none;
+}
+
+.modal-archive__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-archive__label-radio {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-top: 3px;
+  color: #3b4256;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+}
+
+.modal-archive__label-radio:hover .modal-archive__radio-mark {
+  border: 1px solid #f15a22;
+}
+
+.modal-archive__radio-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px dotted #3b4256;
+}
+
+.modal-archive__input[type="radio"]:checked
+  + .modal-archive__radio-mark::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  background-color: #f15a22;
+}
+
+.modal-archive__radio-title {
+  margin-right: 10px;
+  padding-left: 40px;
+}

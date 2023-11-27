@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интранет ФКУ "Налог-сервис"</title>
+</head>
+
+<body class="page__body">
+  <div class="body-container">
+    <%= require('html-loader!../../components/header.html').default %>
+    <main class="main">
+      <div class="main__wrapper">
+        <section class="intro">
+          <div class="intro__content">
+            <div class="container">
+              <h1 class="intro__title">Вакансии</h1>
+              <section class="popular">
+                <div class="popular__wrapper popular__wrapper--secondary">
+                  <ul class="popular__list popular__list--vacancy">
+                    <li class="button-service button-service--vacancy">
+                      <a href="/service/vacancy.html" class="button-service__link">
+                        <div class="button-service__link-wrapper button-service__link-wrapper-intro">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="button-service__icon button-service__icon--no-fill button-service__icon--vacancy">
+                            <path d="M33.3333 13.3335H6.66667C5.74619 13.3335 5 14.0797 5 15.0002V31.6668C5 32.5873 5.74619 33.3335 6.66667 33.3335H33.3333C34.2538 33.3335 35 32.5873 35 31.6668V15.0002C35 14.0797 34.2538 13.3335 33.3333 13.3335Z" stroke="#0066B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.334 13.3332C13.334 9.65127 16.3188 6.6665 20.0007 6.6665C23.6825 6.6665 26.6673 9.65127 26.6673 13.3332" stroke="#0066B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span class="button-service__title">Вакансии</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="button-service button-service--vacancy">
+                      <a href="/service/vacancy/0005-form.html" class="button-service__link">
+                        <div class="button-service__link-wrapper button-service__link-wrapper-intro">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="button-service__icon button-service__icon--no-fill button-service__icon--vacancy">
+                            <path d="M29.4433 13.2041L30.2385 12.409C31.5559 11.0915 33.6919 11.0915 35.0094 12.409C36.3268 13.7264 36.3268 15.8624 35.0094 17.1799L34.2142 17.9751M29.4433 13.2041C29.4433 13.2041 29.5427 14.8938 31.0336 16.3847C32.5245 17.8757 34.2142 17.9751 34.2142 17.9751M29.4433 13.2041L22.1331 20.5143C21.638 21.0095 21.3904 21.2571 21.1775 21.53C20.9263 21.852 20.711 22.2004 20.5353 22.5691C20.3864 22.8816 20.2757 23.2137 20.0542 23.878L19.3453 26.0049L19.1159 26.693M34.2142 17.9751L26.904 25.2853C26.4089 25.7804 26.1613 26.028 25.8883 26.2409C25.5663 26.492 25.2179 26.7074 24.8493 26.883C24.5368 27.032 24.2046 27.1427 23.5403 27.3641L21.4135 28.0731L20.7254 28.3024M20.7254 28.3024L20.0373 28.5318C19.7104 28.6408 19.35 28.5557 19.1063 28.312C18.8627 28.0684 18.7776 27.708 18.8866 27.381L19.1159 26.693M20.7254 28.3024L19.1159 26.693" stroke="#0066B3" stroke-width="1.7"/>
+                            <path d="M11.9766 21.7158H16.266" stroke="#0066B3" stroke-width="1.7" stroke-linecap="round"/>
+                            <path d="M11.9766 14.853H23.129" stroke="#0066B3" stroke-width="1.7" stroke-linecap="round"/>
+                            <path d="M11.9766 28.5786H14.5502" stroke="#0066B3" stroke-width="1.7" stroke-linecap="round"/>
+                            <path d="M32.272 4.85242C30.2619 2.84229 27.0266 2.84229 20.5561 2.84229H17.1245C10.654 2.84229 7.41872 2.84229 5.40858 4.85242C3.39844 6.86256 3.39844 10.0978 3.39844 16.5684V23.4314C3.39844 29.902 3.39844 33.1372 5.40858 35.1474C7.41872 37.1575 10.654 37.1575 17.1245 37.1575H20.5561C27.0266 37.1575 30.2619 37.1575 32.272 35.1474C33.8901 33.5293 34.2057 31.1173 34.2672 26.8629" stroke="#0066B3" stroke-width="1.7" stroke-linecap="round"/>
+                          </svg>
+                          <span class="button-service__title">Создать заявку</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              </div>
+              <section class="tab-section tab-section--vacancy vacancy-navigation">
+                <div class="tab-section__wrapper"></div>
+              </section>
+          </div>
+        </section>
+        <div class="vacancy-details-container">
+          <button class="vacancy-form-button vacancy-form-button--additional vacancy-form-button--return-to-edit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <path d="M23 15H7M7 15L13 9M7 15L13 21" stroke="#0066B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="vacancy-form-button__label">Вернуться к редактированию</span>
+          </button>
+          <section class="vacancy-details">
+            <div class="vacancy-details__wrapper">
+              <header class="vacancy-details-header">
+                <div class="vacancy-details-header__about">
+                  <h2 class="vacancy-details__title"></h2>
+                  <div class="vacancy-details-location">
+                    <ul class="vacancy-details-location__list"></ul>
+                  </div>
+                </div>
+                <div class="vacancy-details-header__salary">
+                  <button class="vacancy-form-button vacancy-form-button--share" title="Поделиться ссылкой">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                      <path d="M11 14.5C11 16.433 9.433 18 7.5 18C5.567 18 4 16.433 4 14.5C4 12.567 5.567 11 7.5 11C9.433 11 11 12.567 11 14.5Z" stroke="#0066B3" stroke-width="2"/>
+                      <path d="M18 7L11 12" stroke="#0066B3" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M18 23L11 18" stroke="#0066B3" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M25 24.5C25 26.433 23.433 28 21.5 28C19.567 28 18 26.433 18 24.5C18 22.567 19.567 21 21.5 21C23.433 21 25 22.567 25 24.5Z" stroke="#0066B3" stroke-width="2"/>
+                      <path d="M25 5.5C25 7.433 23.433 9 21.5 9C19.567 9 18 7.433 18 5.5C18 3.567 19.567 2 21.5 2C23.433 2 25 3.567 25 5.5Z" stroke="#0066B3" stroke-width="2"/>
+                    </svg>
+                  </button>
+                  <div class="vacancy-details-salary">
+                    <p class="vacancy-details-salary__from">от <span class="vacancy-details-salary__value"></span>руб.</p>
+                    <p class="vacancy-details-salary__to">до <span class="vacancy-details-salary__value"></span>руб.</p>
+                    <p class="vacancy-details-salary__net">на руки</p>
+                    <p class="vacancy-details-salary__gross">до вычета налогов</p>
+                    <p class="vacancy-details-salary__agreement vacancy-helpers-hidden">Зарплата: <span class="vacancy-details-salary__value">По договоренности</span></p>
+                  </div>
+                  <p class="vacancy-details-experience">Требуемый опыт:<span class="vacancy-details-experience__value"></span></p>
+                  <p class="vacancy-details-education">Образование:<span class="vacancy-details-education__value"></span></p>
+                  <p class="vacancy-details-schedule">График работы:<span class="vacancy-details-schedule__value"></span></p>
+                </div>
+              </header>
+              <main class="vacancy-details-main">
+                <section class="vacancy-details-functional">
+                  <h2 class="vacancy-details-functional__title">Функциональные обязанности:</h2>
+                  <div class="vacancy-details-functional__content"></div>
+                </section>
+                <section class="vacancy-details-wishes">
+                  <h2 class="vacancy-details-wishes__title">Пожелания к кандидату:</h2>
+                  <div class="vacancy-details-wishes__content"></div>
+                </section>
+                <section class="vacancy-details-advantages">
+                  <h2 class="vacancy-details-advantages__title">Преимуществом будет:</h2>
+                  <div class="vacancy-details-advantages__content"></div>
+                </section>
+                <section class="vacancy-details-offering">
+                  <h2 class="vacancy-details-offering__title">Мы предлагаем:</h2>
+                  <div class="vacancy-details-offering__content"></div>
+                </section>
+              </main>
+              <footer class="vacancy-details-footer">
+                <div class="vacancy-details-contacts">
+                  <p class="vacancy-details-contacts__title">Контакты:</p>
+                  <ul class="vacancy-details-contacts__list"></ul>
+                </div>
+              </footer>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+  <%= require('html-loader!../../components/footer.html').default %>
+  </div>
+</body>
+
+<!-- LOADER -->
+<%= require('html-loader!../../components/loader.html').default %>
+
+<!-- TEMPLATES -->
+<template class="template template--location-item">
+  <li class="vacancy-details-location__item">
+    <div class="vacancy-details-address">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="vacancy-details-address__icon">
+        <path d="M8.0013 14.6666L7.63328 15.0051C7.72796 15.108 7.86143 15.1666 8.0013 15.1666C8.14117 15.1666 8.27464 15.108 8.36932 15.0051L8.0013 14.6666ZM11.7725 10.5661L12.1406 10.9046L11.7725 10.5661ZM4.23007 10.5661L4.59809 10.2277L4.23007 10.5661ZM4.23006 2.36511L3.86204 2.02664V2.02664L4.23006 2.36511ZM11.7725 2.36511L11.4045 2.70358L11.7725 2.36511ZM8.36932 15.0051L12.1406 10.9046L11.4045 10.2277L7.63328 14.3282L8.36932 15.0051ZM3.86205 10.9046L7.63328 15.0051L8.36932 14.3282L4.59809 10.2277L3.86205 10.9046ZM3.86204 2.02664C1.60328 4.48262 1.60328 8.44861 3.86205 10.9046L4.59809 10.2277C2.69126 8.15435 2.69126 4.77689 4.59809 2.70358L3.86204 2.02664ZM12.1406 2.02664C9.85968 -0.453379 6.14292 -0.453379 3.86204 2.02664L4.59809 2.70358C6.4828 0.654308 9.5198 0.654308 11.4045 2.70358L12.1406 2.02664ZM12.1406 10.9046C14.3993 8.4486 14.3993 4.48262 12.1406 2.02664L11.4045 2.70358C13.3113 4.77689 13.3113 8.15434 11.4045 10.2277L12.1406 10.9046ZM9.50098 6C9.50098 6.82843 8.8294 7.5 8.00098 7.5V8.5C9.38169 8.5 10.501 7.38071 10.501 6H9.50098ZM8.00098 4.5C8.8294 4.5 9.50098 5.17157 9.50098 6H10.501C10.501 4.61929 9.38169 3.5 8.00098 3.5V4.5ZM6.50098 6C6.50098 5.17157 7.17255 4.5 8.00098 4.5V3.5C6.62026 3.5 5.50098 4.61929 5.50098 6H6.50098ZM8.00098 7.5C7.17255 7.5 6.50098 6.82843 6.50098 6H5.50098C5.50098 7.38071 6.62026 8.5 8.00098 8.5V7.5Z" fill="#3B4255"/>
+      </svg>
+      <p class="vacancy-details-address__value"></p>
+    </div>
+    <div class="vacancy-details-metro">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none" class="vacancy-details-metro__icon">
+        <path d="M1.60688 10.2917L5.61145 0.541626L8.99888 6.24128L12.3726 0.541626L16.3909 10.2917H17.5703V11.7694H11.5086V10.2917H12.4137L11.536 7.86409L8.99888 11.875L6.46174 7.86409L5.58403 10.2917H6.48917V11.7694H0.427456V10.2917H1.60688Z" fill="#FF0013"/>
+      </svg>
+      <p class="vacancy-details-metro__value"></p>
+    </div>
+  </li>
+</template>
+
+<template class="template template--contacts-item">
+  <li class="vacancy-details-contacts__item">
+    <p class="vacancy-details-contacts__hr"></p>
+    <p href="#" class="vacancy-details-email">
+    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none" class="vacancy-details-email__icon">
+      <path d="M2 9C2 6.40728 2 5.11091 2.76152 4.30546C3.52304 3.5 4.7487 3.5 7.2 3.5H9.8C12.2513 3.5 13.477 3.5 14.2385 4.30546C15 5.11091 15 6.40728 15 9C15 11.5927 15 12.8891 14.2385 13.6945C13.477 14.5 12.2513 14.5 9.8 14.5H7.2C4.7487 14.5 3.52304 14.5 2.76152 13.6945C2 12.8891 2 11.5927 2 9Z" stroke="#0066B3"/>
+      <path d="M4 6.5L5.61917 7.81805C6.99665 8.93935 7.68539 9.5 8.5 9.5C9.31461 9.5 10.0034 8.93935 11.3808 7.81805L13 6.5" stroke="#0066B3" stroke-linecap="round"/>
+    </svg>
+    <span class="vacancy-details-email__text"></span>
+  </p>
+  <p href="tel:+" class="vacancy-details-phone">
+    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none" class="vacancy-details-phone__icon">
+      <path d="M7.52819 4.48713L8.01495 5.35933C8.45423 6.14644 8.27789 7.17899 7.58604 7.87085C7.58603 7.87085 7.58603 7.87085 7.58603 7.87085C7.58592 7.87097 6.74694 8.71016 8.26839 10.2316C9.78918 11.7524 10.6283 10.9148 10.6291 10.914C10.6292 10.9139 10.6292 10.914 10.6292 10.9139C11.321 10.2221 12.3536 10.0458 13.1407 10.485L14.0129 10.9718C15.2014 11.6351 15.3418 13.3019 14.2971 14.3466C13.6693 14.9744 12.9003 15.4629 12.0502 15.4951C10.6191 15.5493 8.18871 15.1872 5.75078 12.7492C3.31285 10.3113 2.95066 7.88092 3.00491 6.44982C3.03714 5.5997 3.5256 4.83068 4.15335 4.20292C5.19807 3.15821 6.86488 3.29858 7.52819 4.48713Z" stroke="#0066B3" stroke-linecap="round"/>
+    </svg>
+    <span class="vacancy-details-phone__text"></span>
+  </p>
+  </li>
+</template>
+
+</html>

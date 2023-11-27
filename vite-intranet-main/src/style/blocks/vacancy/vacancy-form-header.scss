@@ -1,0 +1,32 @@
+.vacancy-form-header {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 20px;
+  }
+
+  &__actions--top-all {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__actions--middle-all {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__actions--bottom-all {
+    display: flex;
+  }
+
+  &__actions--bottom-mode-hr {
+    display: flex;
+    justify-content: space-between;
+  }
+}

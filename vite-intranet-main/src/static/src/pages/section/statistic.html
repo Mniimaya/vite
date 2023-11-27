@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../components/header.html').default %>
+      <main class="main">
+        <div class="main__wrapper">
+          <section class="intro">
+            <div class="intro__content">
+              <div class="container">
+              <h1 class="intro__title">Статистика</h1>
+              </div>
+            </div>
+          </section>
+          <section class="stat">
+            <div class="stat__wrapper">
+              <ul class="stat__list">
+                <li class="stat__item stat__item--today"></li>
+                <li class="stat__item stat__item--yesterday"></li>
+                <li class="stat__item stat__item--week"></li>
+                <li class="stat__item stat__item--30days"></li>
+                <li class="stat__item stat__item--180days"></li>
+                <li class="stat__item stat__item--365days"></li>
+              </ul>
+            </div>
+          </section>
+          <section class="schedule">
+            <div class="schedule__wrapper">
+              <ul class="schedule__list"></ul>
+            </div>
+          </section>
+        </div>
+      </main>
+      <%= require('html-loader!../components/footer.html').default %>
+    </div>
+    <template class="template-day">
+      <li class="schedule__item">
+        <span class="schedule__visits"></span>
+        <span class="schedule__mark"></span>
+        <span class="schedule__uniq"></span>
+        <span class="schedule__title"></span>
+      </li>
+    </template>
+  </body>
+</html>

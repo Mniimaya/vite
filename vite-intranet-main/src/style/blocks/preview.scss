@@ -1,0 +1,32 @@
+.preview {
+  width: 625px;
+  height: 400px;
+  position: relative;
+}
+
+.preview__item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 625px;
+  height: 400px;
+  cursor: pointer;
+}
+
+.preview__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 20px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  min-height: 48px;
+}
+
+.preview__image {
+  width: 625px;
+  height: 400px;
+}

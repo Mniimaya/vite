@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../../components/header.html').default %>
+      <main class="main">
+        <div class="main__wrapper">
+          <section class="intro">
+            <div class="intro__content">
+              <div class="container"></div>
+              <h1 class="intro__title">Документы</h1>
+              
+            </div>
+            <section class="tab-section tab-section--vacancy vacancy-navigation">
+              <div class="tab-section__wrapper">
+                <button class="tab">Добавить документ</button>
+                <button class="tab">Мои документы</button>
+              </div>
+            </section>
+            </div>
+          </section>
+
+          <section class="document-form-container">
+            <button class="document-form-container__button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="12"
+                viewBox="0 0 20 12"
+                fill="none"
+              >
+                <path
+                  d="M20 6C20 6 15.5228 12 10 12C4.47715 12 0 6 0 6C0 6 4.47715 0 10 0C15.5228 0 20 6 20 6Z"
+                  fill="#006C9E"
+                />
+                <circle cx="10" cy="6" r="3" fill="white" />
+              </svg>
+              Предварительный просмотр
+            </button>
+            <form class="document-form">
+              <div class="document-form__wrapper">
+                <div class="document-form-row document-form-row--logo">
+                  <input type="file" />
+                </div>
+                <div class="document-form-row document-form-row--company">
+                  <h3 class="document-form-row__title">Принявший орган</h3>
+                  <div class="document-form-item document-form-item--title">
+                    <label class="document-form-label">Заголовок</label>
+                    <select
+                      class="document-form-select document-form-select--title"
+                    >
+                      <option class="document-form-option">
+                        МИНИСТЕРСТВО ЦИФРОВОГО РАЗВИТИЯ, СВЯЗИ И МАССОВЫХ
+                        КОММУНИКАЦИЙ РОССИЙСКОЙ ФЕДЕРАЦИИ
+                      </option>
+                      <option class="document-form-option">
+                        ПРАВИТЕЛЬСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ
+                      </option>
+                    </select>
+                  </div>
+                  <div class="document-subtitle-items">
+                    <div class="document-form-item">
+                      <label class="document-form-label">Подзаголовок</label>
+                      <input
+                        class="document-form-input document-form-input--subtitle"
+                      />
+                    </div>
+                    <button class="document-form-button">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <path
+                          d="M10 2V18M18 10L2 10"
+                          stroke="#0066B3"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      Добавить подзаголовок
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="document-form-row document-form-row--type-of-documents"
+                >
+                  <div class="document-form-item">
+                    <label class="document-form-label document-form-label--bold"
+                      >Тип документа</label
+                    >
+                    <select
+                      class="document-form-select document-form-select--type"
+                    >
+                      <option class="document-form-option">
+                        СВИДЕТЕЛЬСТВО
+                      </option>
+                      <option class="document-form-option">ПРИКАЗ</option>
+                      <option class="document-form-option">РАСПОРЯЖЕНИЕ</option>
+                      <option class="document-form-option">УСТАВ</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="document-form-row document-form-row--about">
+                  <div class="document-form-item document-form-item--date">
+                    <label class="document-form-label document-form-label--bold"
+                      >Дата документа</label
+                    >
+                    <input class="document-form-input" type="date" />
+                  </div>
+                  <div class="document-form-item document-form-item--number">
+                    <label class="document-form-label document-form-label--bold"
+                      >Серия и номер</label
+                    >
+                    <input class="document-form-input" type="text" />
+                  </div>
+                </div>
+                <div class="document-form-row document-form-row--city">
+                  <div class="document-form-item">
+                    <label class="document-form-label document-form-label--bold"
+                      >Город</label
+                    >
+                    <input type="text" class="document-form-input" />
+                  </div>
+                </div>
+                <div class="document-form-row document-form-row--title">
+                  <h3 class="document-form-row__title">Название документа</h3>
+                  <div class="document-form-item">
+                    <label class="document-form-label">Заголовок</label>
+                    <textarea class="document-form-textarea"></textarea>
+                  </div>
+                  <button class="document-form-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M10 2V18M18 10L2 10"
+                        stroke="#0066B3"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                    Добавить подзаголовок
+                  </button>
+                </div>
+                <div class="document-form-row document-form-row--main">
+                  <h3 class="document-form-row__title">Описание</h3>
+                  <div class="document-form-item">
+                    <label class="document-form-label">Блок</label>
+                    <textarea class="document-form-textarea">
+B целях совершенствования организационно-технического и информационного обеспечения деятельности ФНС России и ее территориальных органов, приказываю:</textarea
+                    >
+                  </div>
+                </div>
+                <div class="document-form-row document-form-row--manager">
+                  <div class="document-form-item">
+                    <label class="document-form-label document-form-label--bold"
+                      >Должность подписанта</label
+                    >
+                    <input class="document-form-input" type="text" />
+                  </div>
+                  <div class="document-form-item">
+                    <label class="document-form-label document-form-label--bold"
+                      >ФИО подписанта</label
+                    >
+                    <input class="document-form-input" type="text" />
+                  </div>
+                </div>
+                <div class="document-form-row document-form-row--file">
+                  <div class="document-form-item">
+                    <label class="document-form-label"
+                      >Добавить скан документа</label
+                    >
+                    <input type="file" />
+                  </div>
+                </div>
+                <div class="document-form-actions">
+                  <button class="button button--primary">Отправить</button>
+                  <button class="button button--secondary">
+                    Сохранить в черновик
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+      <%= require('html-loader!../../components/footer.html').default %>
+    </div>
+  </body>
+</html>

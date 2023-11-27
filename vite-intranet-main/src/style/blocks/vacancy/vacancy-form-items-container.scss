@@ -1,0 +1,25 @@
+.vacancy-form-items-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  &--main {
+    .vacancy-form-items-container__title {
+      margin: 0;
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+
+  &--additional {
+    .vacancy-form-items-container__title {
+      margin: 0;
+      margin-bottom: 15px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}

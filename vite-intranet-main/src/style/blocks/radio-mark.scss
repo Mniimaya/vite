@@ -1,0 +1,22 @@
+.radio-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px dotted transparent;
+  background: #d5d7d8;
+  box-shadow: 1px 1px 4px 0px #00000066 inset;
+}
+
+.radio-mark--small {
+  width: 20px;
+  height: 20px;
+}
+
+.radio-mark--small + .radio-title {
+  margin-right: 0;
+  padding-left: 30px;
+}

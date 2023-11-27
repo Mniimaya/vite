@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интранет ФКУ "Налог-сервис"</title>
+</head>
+
+<body class="page__body">
+  <div class="body-container">
+    <%= require('html-loader!../../components/header.html').default %>
+    <main class="main">
+      <div class="main__wrapper">
+        <section class="intro">
+          <div class="intro__content">
+            <div class="container">
+              <h1 class="intro__title">Документы</h1>
+            </div>
+          </div>
+        </section>
+        <section class="documents">
+          <h2 class="documents__text">Распоряжение ПРАВИТЕЛЬСТВА РФ от 21.12.2011 № 2293-р</h2>
+
+          <div class="documents__wrapper">
+            <div class="documents__container">
+              <h2 class="documents__title">ПРАВИТЕЛЬСТВО РОССИЙСКОЙ ФЕДЕРАЦИИ</h2>
+              <p class="documents__type">РАСПОРЯЖЕНИЕ</p>
+              <div class="documents__headers">
+                <span class="documents__date">21.12.2011</span>
+                <span class="documents__date">№2293-р</span>
+              </div>
+              <p class="documents__city">Москва</p>
+              <div class="documents__description">
+                <p class="documents__body">1. Создать федеральное казенное учреждение "Налог-Сервис" Федеральной налоговой службы (г. Москва) путем изменения типа существующего федерального бюджетного учреждения "Налог-Сервис" Федеральной налоговой службы (г. Москва), сохранив его основные цели деятельности и предельную штатную численность.
+                </p>
+                <p class="documents__body">
+                  2. ФНС России осуществлять функции и полномочия учредителя федерального казенного учреждения, указанного в пункте 1 настоящего распоряжения, и обеспечить в 3-месячный срок внесение изменений в его устав.
+                </p>
+              </div>
+              <div class="documents__footer">
+                <span class="documents__status">Председатель Правительства
+                  Российской Федерации
+                </span>
+                <span class="documents__name">B.Путин</span>
+              </div>
+              <a href="/assets/documents/2011-12-21 РАСПОРЯЖЕНИЕ О создании ФКУ Налог-Сервис.pdf" class="documents__download" download>Скачать скан</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+    <%= require('html-loader!../../components/footer.html').default %>
+  </div>
+</body>
+
+</html>

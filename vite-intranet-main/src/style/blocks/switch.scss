@@ -1,0 +1,49 @@
+label.switch {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  margin-bottom: 0;
+  flex-direction: row;
+
+  .switch__checkbox-custom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 36px;
+    height: 20px;
+    background: #d5d7d8;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 2px;
+      display: flex;
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      transition: left 0.2s ease;
+    }
+  }
+
+  .switch__input:checked + .switch__checkbox-custom {
+    background: linear-gradient(70.37deg, #42805b -0.34%, #99d3a3 78.38%);
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4);
+  }
+
+  .switch__input:checked + .switch__checkbox-custom::after {
+    left: 17px;
+  }
+}
+
+// <label class="switch">
+// <input type="checkbox" class="visually-hidden switch__input">
+// <span class="switch__checkbox-custom"></span>
+// <span class="vacancy-form-label__text">Скрыть год рождения</span>
+// </label>

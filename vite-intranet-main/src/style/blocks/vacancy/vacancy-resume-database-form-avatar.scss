@@ -1,0 +1,17 @@
+.vacancy-resume-database-form-avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  background-color: #FFF;
+  color: #0066B6;
+  filter: drop-shadow(0px 0px 6px rgba(29, 47, 73, 0.40));
+
+  input[type=file] {
+    display: none;
+  }
+}

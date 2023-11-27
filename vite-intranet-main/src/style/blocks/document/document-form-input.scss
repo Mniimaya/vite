@@ -1,0 +1,19 @@
+.document-form-input {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  height: 44px;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid #8a8c8e;
+
+  &--long {
+    width: 100%;
+  }
+
+  &--subtitle {
+    height: 44px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

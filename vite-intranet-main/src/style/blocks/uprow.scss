@@ -1,0 +1,126 @@
+.uprow {
+  width: 100%;
+  background-color: #3b4256;
+  margin: 0;
+  padding: 0;
+}
+
+.uprow__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.uprow__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.uprow__item {
+  padding-left: 30px;
+  transition: all 0.5s ease;
+}
+
+.uprow__item--second {
+  padding: 0;
+}
+
+.uprow__link {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.6;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: all 0.5s ease;
+
+  .uprow__auth {
+    font-weight: 700;
+  }
+}
+
+.uprow__link--notification {
+  width: 35px;
+  height: 35px;
+}
+
+.uprow__link--alert {
+  width: 35px;
+  height: 35px;
+}
+
+.uprow__link:hover {
+  opacity: 0.3;
+}
+
+.uprow__link--notification:before {
+  position: absolute;
+  content: "";
+  background-image: url("/src/assets/img/header/alert.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.uprow__link--alert:before {
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  background-image: url("/src/assets/img/header/notification.svg");
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.uprow__link--true:after {
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  background-color: #f15a22;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  top: 10px;
+  left: 2px;
+}
+
+.uprow__link--auth:before {
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  background-image: url("/src/assets/img/header/auth.svg");
+  width: 25px;
+  height: 25px;
+  left: -25px;
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+.uprow__icon {
+  fill: #ffffff;
+  opacity: 0.8;
+}
+
+.uprow__icon:hover {
+  opacity: 1;
+}

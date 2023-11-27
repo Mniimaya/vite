@@ -1,0 +1,30 @@
+.vacancy-form-checkbox-custom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 20px;
+  background: #d5d7d8;
+  box-shadow: inset 1px 1px 5px rgb(0 0 0 / 40%);
+  border-radius: 10px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 40%);
+    border-radius: 50%;
+    transition: left 0.2s ease;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 5px rgb(241 90 34 / 60%),
+      inset 1px 1px 4px rgb(0 0 0 / 40%);
+  }
+}

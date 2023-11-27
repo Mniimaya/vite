@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="/connect/vacancy/api/postMessage.php" method="post" enctype="multipart/form-data">
+    <p>Скрытый инпут с id_request</p>
+    <input type="number" name="id_request" class="" value="1">
+    <p>Скрытый инпут с учетной записью</p>
+    <input type="text" name="account_number" class="" value="n7700-01-144">
+    <p>Скрытый инпут с именем</p>
+    <input type="text" name="full_name" class="" value="Кан Евгений Сергеевич">
+    <p>Сам текст</p>
+    <input type="text" name="body" class="">
+    <p>Инпут тайп файл</p>
+    <input type="file" name="link" class="">
+    <button type="submit">send</button>
+
+    <p>получать методом пост с отправкой id_request по эндпоинту /connect/vacancy/api/getIdMessages.php</p>
+  </form>
+</body>
+
+</html>

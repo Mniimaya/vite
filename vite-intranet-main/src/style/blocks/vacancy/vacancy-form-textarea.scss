@@ -1,0 +1,41 @@
+.vacancy-form-textarea {
+  box-sizing: border-box;
+  width: 910px;
+  min-height: 100px;
+  padding: 16px 18px !important;
+  border-radius: 0px 0px 10px 10px !important;
+  background: #F4F7FC;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.40) inset;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  color: #3B4255 !important;
+
+  &:hover {
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.40) inset, 0px 0px 5px 0px rgba(241, 90, 34, 0.60) inset;
+  }
+
+  &:focus {
+    border: none !important;
+    outline: 1px solid #F15A22 !important;
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  &--offering {
+    min-height: 150px;
+  }
+
+  p, ul {
+    margin: 0 !important;
+  }
+
+  &--modal {
+    width: 700px;
+    min-height: 90px;
+  }
+
+  &--reply {
+    width: 520px;
+    min-height: 120px;
+  }
+}

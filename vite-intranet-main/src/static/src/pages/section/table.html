@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../components/header.html').default %>
+      <main class="main">
+        <div class="main__wrapper">
+          <section class="intro">
+            <div class="intro__content">
+              <div class="container">
+                <h1 class="intro__title">Организационная структура</h1>
+
+              </div>
+
+            </div>
+          </section>
+          <section class="table">
+            <img
+              class="table__image"
+              src="<%=require('/src/assets/img/structure.png')%>"
+              alt="Структура организации"
+              width="800"
+              height="600"
+            />
+          </section>
+        </div>
+      </main>
+      <%= require('html-loader!../components/footer.html').default %>
+    </div>
+  </body>
+</html>

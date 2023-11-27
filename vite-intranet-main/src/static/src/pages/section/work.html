@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../components/header.html').default %>
+      <main class="main">
+        <div class="main__wrapper">
+          <section class="work">
+            <h2 class="work__title">Страница в разработке......</h2>
+            <img
+              class="work__image"
+              src="<%=require('/src/assets/img/work.png')%>"
+              alt="В разработке"
+              width="503"
+              height="344"
+            />
+          </section>
+        </div>
+      </main>
+      <%= require('html-loader!../components/footer.html').default %>
+    </div>
+  </body>
+</html>

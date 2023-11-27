@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form
+      action="/src/API/vacancy/api/postRequest.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <p>Позиция</p>
+      <input type="text" name="name_of_position" class="" />
+      <p>Вакансия</p>
+      <input type="text" name="name_of_vacancy" class="" />
+      <p>Департамент</p>
+      <input type="text" name="department" class="" />
+      <p>Компания</p>
+      <input type="text" name="company" class="" />
+      <p>Открыта</p>
+      <input type="date" name="date_open" class="" />
+      <p>Закрыта</p>
+      <input type="date" name="date_close" class="" />
+      <p>Количество min 1, max 20</p>
+      <input
+        type="number"
+        name="employees_quantity"
+        class=""
+        min="1"
+        max="20"
+      />
+      <p>Пол</p>
+      <input type="text" name="sex_value" class="" />
+      <p>Возраст мин</p>
+      <input type="number" name="age_min" class="" />
+      <p>Возраст макс</p>
+      <input type="number" name="age_max" class="" />
+      <p>Гросс? 0 на руки, 1 до вычета</p>
+      <input type="number" name="salary_gross" class="" min="0" max="1" />
+      <p>Зарплата мин от 0 до 200</p>
+      <input type="number" name="salary_min" class="" min="0" max="200000" />
+      <p>Зарплата макс от 0 до 200</p>
+      <input type="number" name="salary_max" class="" min="0" max="200000" />
+      <p>Зарплата показать, 0 не показывать, 1 показать</p>
+      <input type="number" name="salary_show" class="" min="0" max="1" />
+      <p>Образование(0 не важно, 1 высшее, 2 среднее)</p>
+      <input type="number" name="education" class="" min="0" max="2" />
+      <p>Опыт</p>
+      <input type="text" name="experience" class="" />
+      <p>Тип занятости</p>
+      <input type="text" name="employment_type" class="" />
+      <p>Функции</p>
+      <input type="text" name="functional" class="" />
+      <p>Пожелания</p>
+      <input type="text" name="wishes" class="" />
+      <p>Преимущества</p>
+      <input type="text" name="advantages" class="" />
+      <p>Мы предлагаем</p>
+      <input type="text" name="offering" class="" />
+      <p>
+        Ниже находится скрытый инпут тайп hidden с value 1 по умолчанию, 2
+        черновик, 3 закрыта
+      </p>
+      <input type="hidden" name="status" class="" value="1" />
+      <p>Контакты</p>
+      <input type="text" name="contacts" class="" />
+      <h2>Графики работ</h2>
+      <p>График Тип 1(1-полный график, 2-5\2 сменный, 3-2\2 сменный)</p>
+      <input type="number" name="type[]" class="" min="1" max="3" />
+      <p>График период 1</p>
+      <input type="text" name="period[]" class="" />
+      <p>График Тип 2(1-полный график, 2-5\2 сменный, 3-2\2 сменный)</p>
+      <input type="number" name="type[]" class="" min="1" max="3" />
+      <p>График период 2</p>
+      <input type="text" name="period[]" class="" />
+      <h2>Адреса</h2>
+      <p>Регион 1</p>
+      <input type="text" name="region[]" class="" />
+      <p>Адрес1 1</p>
+      <input type="text" name="address[]" class="" />
+      <p>Метро 1</p>
+      <input type="text" name="metro[]" class="" />
+      <p>Регион 2</p>
+      <input type="text" name="region[]" class="" />
+      <p>Адрес 2</p>
+      <input type="text" name="address[]" class="" />
+      <p>Метро 2</p>
+      <input type="text" name="metro[]" class="" />
+      <h2>Участники</h2>
+      <p>
+        Роль 1(1-заявитель, 2-согласующий, 3 HR, 4 рекрутер по позиции, 5
+        наблюдатель)
+      </p>
+      <input type="number" name="role[]" class="" min="1" max="5" />
+      <p>ФИО 1</p>
+      <input type="text" name="full_name[]" class="" />
+      <p>Учетная запись 1</p>
+      <input type="text" name="account_number[]" class="" />
+      <p>Участвую в резюме 1(0 не участвую, 1 участвую)</p>
+      <input type="number" name="is_view[]" class="" min="0" max="1" />
+      <p>Участвую в собеседовании 1(0 не участвую, 1 участвую)</p>
+      <input type="number" name="is_interview[]" class="" min="0" max="1" />
+      <div>
+        <strike>
+          Получено согласование 1(null - не определился, 0 не требуется, 1
+          требуется не согласовано, 2 требуется согласовано, 3 требуется
+          отказано)
+        </strike>
+        <p>
+          Получено согласование 1(0 - не определился, 1 не требуется, 2
+          требуется не согласовано, 3 требуется согласовано, 4 требуется
+          отказано)
+        </p>
+      </div>
+      <input type="number" name="is_approve[]" class="" min="0" max="3" />
+      <p>
+        Роль 2(1-заявитель, 2-согласующий, 3 HR, 4 рекрутер по позиции, 5
+        наблюдатель)
+      </p>
+      <input type="number" name="role[]" class="" min="1" max="5" />
+      <p>ФИО 2</p>
+      <input type="text" name="full_name[]" class="" />
+      <p>Учетная запись 2</p>
+      <input type="text" name="account_number[]" class="" />
+      <p>Участвую в резюме 2(0 не участвую, 1 участвую)</p>
+      <input type="number" name="is_view[]" class="" min="0" max="1" />
+      <p>Участвую в собеседовании 2(0 не участвую, 1 участвую)</p>
+      <input type="number" name="is_interview[]" class="" min="0" max="1" />
+      <div>
+        <strike>
+          Получено согласование 1(null - не определился, 0 не требуется, 1
+          требуется не согласовано, 2 требуется согласовано, 3 требуется
+          отказано)
+        </strike>
+        <p>
+          Получено согласование 1(0 - не определился, 1 не требуется, 2
+          требуется не согласовано, 3 требуется согласовано, 4 требуется
+          отказано)
+        </p>
+      </div>
+      <input type="number" name="is_approve[]" class="" min="0" max="3" />
+      <button type="submit">send</button>
+    </form>
+  </body>
+</html>

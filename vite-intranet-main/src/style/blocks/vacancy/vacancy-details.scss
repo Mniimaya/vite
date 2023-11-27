@@ -1,0 +1,219 @@
+.vacancy-details {
+  width: 1300px;
+  margin: 0 auto 30px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(29, 47, 73, 0.1);
+
+  &__wrapper {
+    padding: 40px 80px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    color: $color-blue-dark;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  &__item {
+    &--addresses {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__address,
+  &__metro {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__address-value,
+  &__metro-value {
+    color: rgba($color: $color-blue-dark, $alpha: 0.8);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__copy {
+    width: fit-content;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+    &:hover {
+      path {
+        stroke: $color-hover;
+      }
+    }
+  }
+
+  &__salary {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+  }
+
+  &__salary-from,
+  &__salary-to,
+  &__salary-taxes,
+  &__salary-title,
+  &__salary-currency {
+    color: $color-blue-dark;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__salary-from-value,
+  &__salary-to-value,
+  &__salary-agreements-value {
+    color: $color-blue;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__experience,
+  &__education {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 5px;
+    margin-bottom: 8px;
+  }
+
+  &__experience-label,
+  &__education-label {
+    color: $color-blue-dark;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__experience-value,
+  &__education-value {
+    color: $color-blue;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__functional,
+  &__wishes,
+  &__advantages,
+  &__offering {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__functional-label,
+  &__wishes-label,
+  &__advantages-label,
+  &__offering-label {
+    color: $color-blue-dark;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__functional-content,
+  &__wishes-content,
+  &__advantages-content,
+  &__offering-content {
+    color: rgba($color: $color-blue-dark, $alpha: 0.8);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__contacts {
+    margin-bottom: 20px;
+  }
+
+  &__contacts-title {
+    color: $color-blue-dark;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+
+  &__hr-fullname {
+    margin-bottom: 8px;
+  }
+
+  &__hr-mail,
+  &__hr-phone {
+    color: $color-blue-dark;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__hr-mail {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__hr-phone {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+  }
+
+  &__hr-mail-icon,
+  &__hr-phone-icon {
+    padding-top: 4px;
+  }
+
+  &__actions {
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    color: rgba($color: $color-blue-dark, $alpha: 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__button--reply {
+    width: 250px;
+  }
+}

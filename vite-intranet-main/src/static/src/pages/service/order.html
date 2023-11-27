@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../components/header.html').default %>
+      <main class="main">
+        <div class="main__order order">
+          <div class="order__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--data">
+                <a href="/service/order.html" class="menu__item-link">
+                  Инциденты
+                </a>
+              </li>
+              <li class="menu__item menu__item--equipment">Оборудование</li>
+              <li class="menu__item menu__item--incident">Новый инцидент</li>
+              <li class="menu__item menu__item--archive">Архив</li>
+              <li class="menu__item menu__item--search">
+                <form class="menu__form" action="">
+                  <label class="menu__label" for="menu__input"></label>
+                  <input
+                    class="menu__input"
+                    type="text"
+                    placeholder="Поиск"
+                    name="search"
+                    autocomplete="off"
+                  />
+                </form>
+              </li>
+            </ul>
+          </div>
+          <div class="order__data data js-display">
+            <div class="data__incident">
+              <table class="data__table">
+                <tr class="data__row-header">
+                  <th class="data__header data__header--object">Объект</th>
+                  <th class="data__header data__header--type">
+                    Тип оборудования
+                  </th>
+                  <th class="data__header data__header--name">Наименование</th>
+                  <th class="data__header data__header--serial">
+                    Серийный номер
+                  </th>
+                  <th class="data__header data__header--fault">
+                    Неисправность
+                  </th>
+                  <th class="data__header data__header--date">Дата создания</th>
+                  <th class="data__header data__header--quality">Количество</th>
+                  <th class="data__header data__header--number">№ БУ</th>
+                  <th class="data__header data__header--line">
+                    № Внешней линии
+                  </th>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="order__equipment equipment js-nodisplay">
+            <div class="equipment__date">
+              <table class="equipment__table">
+                <tr class="equipment__row-header">
+                  <th class="equipment__header equipment__header--soun">
+                    СОУН
+                  </th>
+                  <th class="equipment__header equipment__header--object">
+                    Объект
+                  </th>
+                  <th class="equipment__header equipment__header--type">
+                    Тип оборудования
+                  </th>
+                  <th class="equipment__header equipment__header--vendor">
+                    Производитель
+                  </th>
+                  <th class="equipment__header equipment__header--model">
+                    Модель
+                  </th>
+                  <th class="equipment__header equipment__header--serial">
+                    Серийный номер
+                  </th>
+                  <th class="equipment__header equipment__header--service">
+                    Сервисный номер
+                  </th>
+                  <th class="equipment__header equipment__header--invent">
+                    Инвентарный номер
+                  </th>
+                  <th class="equipment__header equipment__header--year">Год</th>
+                  <th class="equipment__header equipment__header--warranty">
+                    Гарантия
+                  </th>
+                </tr>
+              </table>
+              <button class="equipment__button">Загрузить весь список</button>
+            </div>
+          </div>
+          <div class="order__incident incident js-nodisplay">
+            <div class="incident__content">
+              <h3 class="incident__title">Создание нового инцидента</h3>
+              <form class="incident__form" action="">
+                <fieldset class="incident__fieldset">
+                  <label class="incident__label" for="incident__input--date"
+                    >Дата создания*</label
+                  >
+                  <input
+                    class="incident__input incident__input--date"
+                    id="incident__input--date"
+                    type="text"
+                    name="date"
+                    placeholder="01.01.2022"
+                    required
+                  />
+                  <label class="incident__label" for="incident__input--object"
+                    >Объект*</label
+                  >
+                  <input
+                    class="incident__input incident__input--object"
+                    name="object"
+                    id="incident__input--object"
+                    list="objects"
+                    required
+                  />
+                  <datalist class="incident__datalist" id="objects">
+                    <option class="incident__option">
+                      УФНС России по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №1 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №2 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №3 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №4 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №5 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №6 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №7 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №8 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №9 по г. Москве
+                    </option>
+                    <option class="incident__option">
+                      д.о. ИФНС России №9 по г. Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №10 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №13 по Москве
+                    </option>
+                    <option class="incident__option">
+                      д.о. ИФНС России №14 по г. Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №15 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №16 по г. Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России № 17 по г. Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №18 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №19 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №20 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №21 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №22 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №23 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №24 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №25 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №26 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №27 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №28 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №29 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России № 30 по г. Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №31 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №33 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №34 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №35 по Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №36 по г. Москве
+                    </option>
+                    <option class="incident__option">
+                      ИФНС России №43 по Москве
+                    </option>
+                    <option class="incident__option">
+                      МИФНС России № 46 по г. Москве
+                    </option>
+                    <option class="incident__option">
+                      МИФНС России № 47 по г. Москве
+                    </option>
+                    <option class="incident__option">
+                      МИФНС России № 51 по г. Москве
+                    </option>
+                  </datalist>
+                  <input
+                    class="incident__input incident__input--id"
+                    type="hidden"
+                    name="id"
+                  />
+                  <input
+                    class="incident__input incident__input--status"
+                    value="0"
+                    type="hidden"
+                    name="status"
+                  />
+                  <label class="incident__label" for="incident__input--type"
+                    >Тип оборудования*</label
+                  >
+                  <input
+                    class="incident__input incident__input--type"
+                    id="incident__input--type"
+                    type="text"
+                    name="type"
+                    required
+                  />
+                  <label class="incident__label" for="incident__input--name"
+                    >Наименование*</label
+                  >
+                  <input
+                    class="incident__input incident__input--name"
+                    id="incident__input--name"
+                    type="text"
+                    name="name"
+                    required
+                  />
+                  <label class="incident__label" for="incident__input--serial"
+                    >Серийный номер*</label
+                  >
+                  <input
+                    class="incident__input incident__input--serial"
+                    id="incident__input--serial"
+                    type="text"
+                    name="serial"
+                    required
+                  />
+                  <label class="incident__label" for="incident__input--fault"
+                    >Неисправность*</label
+                  >
+                  <input
+                    class="incident__input incident__input--fault"
+                    id="incident__input--fault"
+                    type="text"
+                    name="fault"
+                    required
+                  />
+                  <label class="incident__label" for="incident__input--quality"
+                    >Количество*</label
+                  >
+                  <input
+                    class="incident__input incident__input--quality"
+                    id="incident__input--quality"
+                    type="text"
+                    name="quality"
+                    required
+                  />
+                  <label class="incident__label" for="incident__input--number"
+                    >№ БУ*</label
+                  >
+                  <input
+                    class="incident__input incident__input--number"
+                    id="incident__input--number"
+                    type="text"
+                    name="number"
+                    required
+                  />
+                  <label class="incident__label" for="incident__input--line"
+                    >№ Внешней линии</label
+                  >
+                  <input
+                    class="incident__input incident__input--line"
+                    id="incident__input--line"
+                    type="text"
+                    value="Не определен"
+                    name="line"
+                  />
+                  <!-- <label class="incident__label incident__label--comments" for="incident__input--comments">Комментарий</label>
+                                <textarea class="incident__input incident__input--comments" id="incident__input--comments" rows="7" type="text" name="comments"></textarea> -->
+                </fieldset>
+                <div class="incident__button-wrapper">
+                  <button class="incident__button incident__button--save">
+                    Сохранить
+                  </button>
+                  <button
+                    class="incident__button incident__button--close"
+                    type="reset"
+                  >
+                    Сбросить
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="order__archive archive js-nodisplay">
+            <div class="archive__incident">
+              <table class="archive__table">
+                <tr class="archive__row">
+                  <th class="archive__header archive__header--object">
+                    Объект
+                  </th>
+                  <th class="archive__header archive__header--type">
+                    Тип оборудования
+                  </th>
+                  <th class="archive__header archive__header--name">
+                    Наименование
+                  </th>
+                  <th class="archive__header archive__header--serial">
+                    Серийный номер
+                  </th>
+                  <th class="archive__header archive__header--fault">
+                    Неисправность
+                  </th>
+                  <th class="archive__header archive__header--date">
+                    Дата создания
+                  </th>
+                  <th class="archive__header archive__header--quality">
+                    Количество
+                  </th>
+                  <th class="archive__header archive__header--number">№ БУ</th>
+                  <th class="archive__header archive__header--comments">
+                    Комментарии
+                  </th>
+                  <th class="archive__header archive__header--line">
+                    № Внешней линии
+                  </th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+      <%= require('html-loader!../components/footer.html').default %>
+    </div>
+    <template class="template-equipment">
+      <tr class="equipment__row">
+        <td class="equipment__case equipment__case--soun">СОУН</td>
+        <td class="equipment__case equipment__case--object">Объект</td>
+        <td class="equipment__case equipment__case--type">Тип оборудования</td>
+        <td class="equipment__case equipment__case--vendor">Производитель</td>
+        <td class="equipment__case equipment__case--model">Модель</td>
+        <td class="equipment__case equipment__case--serial">Серийный номер</td>
+        <td class="equipment__case equipment__case--service">
+          Сервисный номер
+        </td>
+        <td class="equipment__case equipment__case--invent">
+          Инвентарный номер
+        </td>
+        <td class="equipment__case equipment__case--year">Год выпуска</td>
+        <td class="equipment__case equipment__case--warranty">Гарантия</td>
+      </tr>
+    </template>
+    <template class="template-archive">
+      <tr class="archive__row status-color--closed">
+        <td class="archive__case archive__case--object">Объект</td>
+        <td class="archive__case archive__case--type">Тип оборудования</td>
+        <td class="archive__case archive__case--name">Наименование</td>
+        <td class="archive__case archive__case--serial">Серийный номер</td>
+        <td class="archive__case archive__case--fault">Неисправность</td>
+        <td class="archive__case archive__case--date">Дата создания</td>
+        <td class="archive__case archive__case--quality">Количество</td>
+        <td class="archive__case archive__case--number">№ БУ</td>
+        <td class="archive__case archive__case--comments">Комментарии</td>
+        <td class="archive__case archive__case--line">№ Внешней линии</td>
+      </tr>
+    </template>
+    <template class="template-data">
+      <tbody class="data__tbody">
+        <tr class="data__row status-color">
+          <td class="data__case data__case--object">Объект 1</td>
+          <td class="data__case data__case--type">Тип оборудования</td>
+          <td class="data__case data__case--name">Наименование</td>
+          <td class="data__case data__case--serial">Серийный номер</td>
+          <td class="data__case data__case--fault">Неисправность</td>
+          <td class="data__case data__case--date">Дата создания</td>
+          <td class="data__case data__case--quality">Количество</td>
+          <td class="data__case data__case--number">>12345678911234567892</td>
+          <td class="data__case data__case--line">
+            <span class="data__case-text js-input">Не присвоен</span>
+            <input
+              class="data__case-input js-noinput"
+              type="text"
+              name="new-number"
+            />
+          </td>
+        </tr>
+        <tr class="data__inner-row js-nodisplay">
+          <td class="data__inner" colspan="10">
+            <div class="data__inner-container">
+              <div class="data__inner-history">
+                <h3 class="data__inner-title">История комментариев</h3>
+                <div class="data__inner-comments"></div>
+              </div>
+              <div class="data__inner-wrapper">
+                <form class="data__inner-form" action="">
+                  <div class="data__inner-buttons">
+                    <button
+                      class="data__inner-button data__inner-button--ordered status-color--ordered"
+                    >
+                      Заказан
+                    </button>
+                    <button
+                      class="data__inner-button data__inner-button--approved status-color--approved"
+                    >
+                      Подтверждено
+                    </button>
+                    <button
+                      class="data__inner-button data__inner-button--closed status-color--closed"
+                    >
+                      Закрыт
+                    </button>
+                    <button
+                      class="data__inner-button data__inner-button--return status-color--return"
+                    >
+                      Возврат
+                    </button>
+                    <input
+                      class="data__inner-new-status"
+                      type="hidden"
+                      value="0"
+                      name="status"
+                    />
+                    <input class="data__inner-id" type="hidden" name="id" />
+                  </div>
+                  <h2 class="data__inner-title">Оставить новый комментарий</h2>
+                  <label
+                    class="data__inner-label"
+                    for="data__case-input"
+                  ></label>
+                  <textarea
+                    class="data__inner-input"
+                    type="text"
+                    name="data__inner-input"
+                    id="data__inner-input"
+                    cols="70"
+                    rows="10"
+                  ></textarea>
+                  <div class="data__form-buttons">
+                    <button
+                      class="data__inner-button-form data__inner-button--comment"
+                    >
+                      Сохранить
+                    </button>
+                    <button
+                      class="data__inner-button-form data__inner-button--close"
+                    >
+                      Закрыть
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <script src="/js/order.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+.newslink {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.newslink__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.newslink__title {
+  text-align: left;
+  width: 100%;
+}
+
+.newslink__date {
+  text-align: left;
+  width: 100%;
+}
+
+.newslink__content {
+  text-align: left;
+  width: 100%;
+}
+
+.newslink__images {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.newslink__avatar {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.newslink__description {
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}

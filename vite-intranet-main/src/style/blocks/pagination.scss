@@ -1,0 +1,59 @@
+.pagination__list {
+  display: flex;
+  list-style-type: none;
+  max-width: 350px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: 30px;
+  justify-content: center;
+
+  li:not(:last-of-type) {
+    margin-right: 35px;
+  }
+}
+
+.pagination__btn {
+  font-family: "PF Din Text Cond Pro";
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b4255;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+
+  &:hover {
+    color: #f15a22;
+  }
+  &--arrow {
+    color: #0066b3;
+  }
+  &--dots {
+    cursor: default;
+  }
+}
+
+.pagination__btn--actual {
+  font-weight: 700;
+  color: #0066b3;
+}
+
+.pagination__btn--arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__btn--prev,
+.pagination__btn--start {
+  svg {
+    transform: rotate(-180deg);
+  }
+}
+
+.pagination__btn--dots:hover {
+  color: #3b4255;
+}

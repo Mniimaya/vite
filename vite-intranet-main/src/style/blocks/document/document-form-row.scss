@@ -1,0 +1,31 @@
+.document-form-row {
+  &--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--company {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--about {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &--manager {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #3b4255;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+  }
+}

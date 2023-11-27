@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../../components/header.html').default %>
+      <main class="main">
+        <div class="main__wrapper">
+          <section class="intro">
+            <div class="intro__content">
+              <div class="container">
+                <h1 class="intro__title">Опрос № 005-002-00</h1>
+              </div>
+            </div>
+          </section>
+          <section class="voit main-container">
+            <div class="voit__wrapper">
+              <p class="voit__description">
+                Вашему вниманию предлагается 33-и утверждения, время прохождения
+                15 минут.
+              </p>
+              <p class="voit__description">
+                Результаты прохождения Вами опроса обезличены и будут
+                использованы только для анализа общей атмосферы в организации.
+              </p>
+              <p class="voit__description">
+                Инструкция к опросу: выберите наиболее значимый для Вас один
+                вариант ответа из предложенных утверждений "а) b) c) d)". Для
+                получения наилучших результатов на вопросы следует отвечать
+                быстро, не раздумывая. Ваш первый, может быть, не вполне
+                осознанный ответ, вероятно, и есть наиболее верное отражение
+                ваших истинных чувств.
+              </p>
+              <form
+                action="/connect/voits/api/post.php"
+                class="voit__form"
+                enctype="multipart/form-data"
+              >
+                <input type="hidden" class="voit__input--id" name="id" />
+                <fieldset class="voit__fieldset">
+                  <legend class="voit__legend">Анкета</legend>
+                  <ul class="voit__list">
+                    <span class="voit__question">Ваш пол</span>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Мужской</span>
+                        <input
+                          type="radio"
+                          name="gender"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="man"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Женский</span>
+                        <input
+                          type="radio"
+                          name="gender"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="woman"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="voit__fieldset voit__fieldset--questions">
+                  <legend class="voit__legend">Опросник</legend>
+                </fieldset>
+                <button class="weekend__btn voit__submit">Отправить</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+      <%= require('html-loader!../../components/footer.html').default %>
+    </div>
+    <template class="voit-template">
+      <ul class="voit__list">
+        <span class="voit__question"></span>
+        <li class="voit__item">
+          <label class="voit__label">
+            <span class="voit__title voit__title--1"></span>
+            <input
+              type="radio"
+              class="voit__input voit__input--radio visually-hidden"
+              value="a"
+              required
+            />
+            <span class="voit__mark"></span>
+          </label>
+        </li>
+        <li class="voit__item">
+          <label class="voit__label">
+            <span class="voit__title voit__title--2"></span>
+            <input
+              type="radio"
+              class="voit__input voit__input--radio visually-hidden"
+              value="b"
+            />
+            <span class="voit__mark"></span>
+          </label>
+        </li>
+        <li class="voit__item">
+          <label class="voit__label">
+            <span class="voit__title voit__title--3"></span>
+            <input
+              type="radio"
+              class="voit__input voit__input--radio visually-hidden"
+              value="c"
+            />
+            <span class="voit__mark"></span>
+          </label>
+        </li>
+        <li class="voit__item">
+          <label class="voit__label">
+            <span class="voit__title voit__title--4"></span>
+            <input
+              type="radio"
+              class="voit__input voit__input--radio visually-hidden"
+              value="d"
+            />
+            <span class="voit__mark"></span>
+          </label>
+        </li>
+      </ul>
+    </template>
+  </body>
+</html>

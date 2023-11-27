@@ -1,0 +1,13 @@
+.document-form-item {
+  display: flex;
+  flex-direction: column;
+
+  &--title {
+    margin-bottom: 15px;
+  }
+
+  &--date,
+  &--number {
+    width: calc(50% - 10px);
+  }
+}

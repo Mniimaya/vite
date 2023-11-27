@@ -1,0 +1,59 @@
+@import "../common/variables.scss";
+
+.hotel__title {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.hotel__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotel__image {
+  margin-right: 30px;
+  border: 1px solid #3b4256;
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 7%);
+}
+
+.hotel__list {
+  padding: 0;
+  padding-top: 30px;
+  list-style-type: none;
+  margin: 0;
+  text-align: left;
+  max-width: 400px;
+}
+
+.hotel__item {
+  margin-bottom: 20px;
+}
+
+.hotel__link {
+  color: #3b4256;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hotel__link--secondary {
+  border-bottom: 1px $color-blue solid;
+  color: $color-blue;
+}
+
+.hotel__link:hover {
+  border-color: $color-hover;
+  color: #f15a22;
+}
+
+.hotel__services {
+  text-align: left;
+}
+
+.hotel__advantages {
+  text-align: justify;
+  max-width: 1200px;
+}

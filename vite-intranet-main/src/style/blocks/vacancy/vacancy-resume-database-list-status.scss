@@ -1,0 +1,19 @@
+.vacancy-resume-database-list-status {
+  width: 137px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+
+  &__badge {
+    width: fit-content;
+    height: fit-content;
+    padding: 0 10px;
+    color: #FFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #2DBDB6;
+    border-radius: 6px;
+  }
+}

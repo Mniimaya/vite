@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../components/header.html').default %>
+      <main class="main">
+        <div class="main__wrapper">
+          <section class="intro">
+            <div class="intro__content">
+              <div class="container">
+                <h1 class="intro__title">Сообщения</h1>
+              </div>
+            </div>
+          </section>
+          <section class="notification">
+            <div class="notification__wrapper">
+              <div class="notification__inner-wrapper">
+                <div class="notification__up">
+                  <h2 class="notification__title">Чаты</h2>
+                  <div class="notification__wrapper-chats">
+                    <button
+                      class="notification__update-chats"
+                      title="Обновить чаты"
+                    ></button>
+                    <button
+                      class="notification__new-chat"
+                      title="Создать чат"
+                    ></button>
+                  </div>
+                </div>
+                <ul class="notification__chats"></ul>
+              </div>
+              <div class="notification__chats-wrapper js-nodisplay">
+                <div class="notification__headline">
+                  <div class="notification__info">
+                    <a
+                      href="#"
+                      class="notification__link notification__theme"
+                    ></a>
+                    <a
+                      href="#"
+                      class="notification__link notification__service"
+                    ></a>
+                    <a
+                      href="#"
+                      class="notification__link notification__author"
+                    ></a>
+                    <span class="notification__participants"></span>
+                  </div>
+                  <div class="notification__admin">
+                    <div class="notification__admin-inner">
+                      <button
+                        class="notification__admin-btn notification__admin-btn--modal"
+                        title="Добавить участника"
+                      ></button>
+                      <button
+                        class="notification__admin-btn notification__admin-btn--search"
+                        title="Поиск в чате"
+                      ></button>
+                      <button
+                        class="notification__admin-btn notification__admin-btn--exit"
+                        title="Выйти из чата"
+                      ></button>
+                    </div>
+                    <button
+                      class="notification__admin-btn notification__admin-btn--remove"
+                    >
+                      Удалить чат
+                    </button>
+                  </div>
+                </div>
+                <ul class="notification__messages"></ul>
+                <form
+                  action="/connect/notification/api/postMessage.php"
+                  enctype="multipart/form-data"
+                  class="notification__form"
+                >
+                  <input
+                    class="notification__info-input input"
+                    name="body"
+                    placeholder="Сообщение"
+                    required
+                    minlength="1"
+                    maxlength="1800"
+                    autocomplete="off"
+                  />
+                  <input
+                    class="chats_id"
+                    type="hidden"
+                    name="chats_id"
+                    value="1"
+                  />
+                  <input type="hidden" name="type" value="0" />
+                  <label class="notification__label-file">
+                    <input
+                      class="notification__file visually-hidden"
+                      type="file"
+                      name="link"
+                    />
+                  </label>
+
+                  <button
+                    class="notification__submit button--main"
+                    type="submit"
+                  >
+                    Отправить
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <template class="template-chat">
+        <li class="notification__item">
+          <h3 class="notification__service"></h3>
+          <h4 class="notification__theme"></h4>
+          <p class="notification__author"></p>
+          <div class="notification__wrapper-info">
+            <span class="notification__past"></span>
+            <span class="notification__unread"></span>
+          </div>
+        </li>
+      </template>
+      <template class="template-message"></template>
+      <div class="modal js-nodisplay">
+        <div class="modal__container">
+          <div class="modal__title">Создать чат</div>
+          <form
+            action="/connect/notification/api/addchat.php"
+            enctype="multipart/form-data"
+            class="modal__form"
+            disabled
+          >
+            <label class="label" for="input--theme">Название чата</label>
+            <input
+              required
+              type="text"
+              class="input notification__input"
+              name="notification_theme"
+              id="input--theme"
+            />
+            <div class="notification__participants-wrapper">
+              <div class="notification__search-wrapper">
+                <label class="label" for="input--name">ФИО</label>
+                <input
+                  type="text"
+                  class="input notification__input notification__input--name"
+                  placeholder="Введите Фамилию Имя Отчество"
+                  name="participants[]"
+                  id="input--name"
+                  required
+                />
+                <input
+                  type="hidden"
+                  class="input--account"
+                  name="account_number[]"
+                  required
+                />
+                <ul class="notification__list-search"></ul>
+                <span class="notification__validation"></span>
+                <button type="button" class="notification__button-add">
+                  Добавить еще
+                </button>
+              </div>
+            </div>
+
+            <!-- <input type="hidden" class="input--participant" /> -->
+            <input type="hidden" name="status" value="0" />
+
+            <div class="notification__button-wrapper">
+              <button type="submit" class="notification__send button--main">
+                Отправить
+              </button>
+              <button
+                type="reset"
+                class="notification__reset button--secondary"
+              >
+                Закрыть
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="notification__modal js-nodisplay modal">
+        <div class="notification__content">
+          <h2 class="notification__modal-title">
+            Добавить нового участника в чат
+          </h2>
+          <form
+            action="/connect/notification/api/postParticipants.php"
+            enctype="multipart/form-data"
+            class="modal__form modal__form--new"
+          >
+            <div class="notification__participants-wrapper">
+              <div class="notification__search-wrapper">
+                <label class="label" for="input--name">ФИО</label>
+                <input
+                  type="text"
+                  class="input notification__input notification__input--name"
+                  placeholder="Введите Фамилию Имя Отчество"
+                  name="participants[]"
+                  id="input--name"
+                  required
+                />
+                <input
+                  type="hidden"
+                  class="input--account"
+                  name="account_number[]"
+                  required
+                />
+                <ul class="notification__list-search"></ul>
+                <span class="notification__validation"></span>
+                <button type="button" class="notification__button-add">
+                  Добавить еще
+                </button>
+              </div>
+            </div>
+            <input type="hidden" name="status" value="0" />
+            <input class="id" type="hidden" name="id" value="" />
+            <input
+              type="hidden"
+              class="input--account"
+              name="account_number[]"
+              required
+            />
+
+            <div class="button__wrapper">
+              <button type="submit" class="notification__send button--main">
+                Отправить
+              </button>
+              <button
+                type="reset"
+                class="notification__reset button--secondary"
+              >
+                Закрыть
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <template class="extra-participant">
+        <div class="notification__search-wrapper">
+          <label class="label" for="input--name">ФИО</label>
+          <input
+            type="text"
+            class="input notification__input notification__input--name"
+            placeholder="Введите Фамилию Имя Отчество"
+            id="input--name"
+            name="participants[]"
+            required
+          />
+          <input
+            type="hidden"
+            class="input--account"
+            name="account_number[]"
+            required
+          />
+          <ul class="notification__list-search"></ul>
+          <span class="notification__validation"></span>
+          <button type="button" class="notification__button-remove"></button>
+        </div>
+      </template>
+      <%= require('html-loader!../components/footer.html').default %>
+    </div>
+  </body>
+</html>

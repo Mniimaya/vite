@@ -1,0 +1,29 @@
+.external {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.external__list {
+  list-style-type: none;
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+  text-align: left;
+}
+
+.external__link {
+  color: #3b4256;
+  text-decoration: none;
+}
+
+.external__title {
+  font-size: 16px;
+}
+
+.external__item:hover {
+  cursor: pointer;
+}
+
+.external__item:hover .external__link {
+  color: #f15a22;
+}

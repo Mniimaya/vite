@@ -1,0 +1,54 @@
+.vacancy-resume-database-list {
+  list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+  &__item {
+    display: flex;
+    text-align: left;
+
+    &--header {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #8A8C8E;
+    }
+  }
+
+  &__title {
+    color: $color-blue-dark;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: 20px;
+
+    :last-child {
+      margin-right: 0;
+    }
+
+    &--fullname {
+      width: 275px;
+      margin-right: 50px;
+      text-align: left;
+    }
+
+    &--status {
+      width: 137px;
+    }
+
+    &--comment {
+      width: 275px;
+    }
+
+    &--phone {
+      width: 185px;
+    }
+
+    &--email {
+      width: 185px;
+    }
+  }
+}

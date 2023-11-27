@@ -1,0 +1,202 @@
+/* Шрифты */
+@import "./common/fonts.scss";
+
+/* Общие стили */
+@import "./common/common.scss";
+
+[data-dark] {
+  background-color: #3b4256;
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+[data-whitetext] {
+  color: #ffffff;
+}
+
+[data-darktext] {
+  color: #3b4256;
+}
+
+[data-gray] {
+  background-color: #9fa6af;
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+[type="date"] {
+  background-color: #f4f7fc;
+  background-position: center right 15px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 0.25C6.41422 0.25 6.75 0.585786 6.75 1V1.76272C7.41203 1.74999 8.1414 1.74999 8.94358 1.75L9 1.75H13L13.0564 1.75C13.8586 1.74999 14.588 1.74999 15.25 1.76272V1C15.25 0.585786 15.5858 0.25 16 0.25C16.4142 0.25 16.75 0.585786 16.75 1V1.82709C17.0099 1.84691 17.2561 1.87182 17.489 1.90313C18.6614 2.06076 19.6104 2.39288 20.3588 3.14124C21.1071 3.88961 21.4392 4.83855 21.5969 6.01098C21.75 7.15017 21.75 8.60577 21.75 10.4435V10.4436V10.5V12.5V12.5564V12.5565C21.75 14.3942 21.75 15.8498 21.5969 16.989C21.4392 18.1614 21.1071 19.1104 20.3588 19.8588C19.6104 20.6071 18.6614 20.9392 17.489 21.0969C16.3498 21.25 14.8942 21.25 13.0565 21.25H13.0564H13H9H8.94359H8.94354C7.1058 21.25 5.65019 21.25 4.51098 21.0969C3.33855 20.9392 2.3896 20.6071 1.64124 19.8588C0.892884 19.1104 0.560761 18.1614 0.403138 16.989C0.24997 15.85 0.249985 14.3945 0.25 12.5571V12.557V12.5569V12.5568V12.5566V12.5565V12.5564V12.5V10.5V10.4436V10.4435V10.4434V10.4432V10.4431V10.443V10.4429C0.249985 8.60546 0.24997 7.15005 0.403138 6.01098C0.560761 4.83855 0.892884 3.88961 1.64124 3.14124C2.3896 2.39288 3.33855 2.06076 4.51098 1.90313C4.7439 1.87182 4.99006 1.84691 5.25 1.82709V1C5.25 0.585786 5.58579 0.25 6 0.25ZM4.71085 3.38976C3.70476 3.52502 3.12511 3.77869 2.7019 4.2019C2.27869 4.62511 2.02502 5.20476 1.88976 6.21085C1.86685 6.38123 1.84769 6.56061 1.83168 6.75H20.1683C20.1523 6.56061 20.1331 6.38123 20.1102 6.21085C19.975 5.20476 19.7213 4.62511 19.2981 4.2019C18.8749 3.77869 18.2952 3.52502 17.2892 3.38976C16.2615 3.25159 14.9068 3.25 13 3.25H9C7.09318 3.25 5.73851 3.25159 4.71085 3.38976ZM1.75 10.5C1.75 9.64599 1.75032 8.90273 1.76308 8.25H20.2369C20.2497 8.90273 20.25 9.64599 20.25 10.5V12.5C20.25 14.4068 20.2484 15.7615 20.1102 16.7892C19.975 17.7952 19.7213 18.3749 19.2981 18.7981C18.8749 19.2213 18.2952 19.475 17.2892 19.6102C16.2615 19.7484 14.9068 19.75 13 19.75H9C7.09318 19.75 5.73851 19.7484 4.71085 19.6102C3.70476 19.475 3.12511 19.2213 2.7019 18.7981C2.27869 18.3749 2.02502 17.7952 1.88976 16.7892C1.75159 15.7615 1.75 14.4068 1.75 12.5V10.5ZM16 12.5C16.5523 12.5 17 12.0523 17 11.5C17 10.9477 16.5523 10.5 16 10.5C15.4477 10.5 15 10.9477 15 11.5C15 12.0523 15.4477 12.5 16 12.5ZM16 16.5C16.5523 16.5 17 16.0523 17 15.5C17 14.9477 16.5523 14.5 16 14.5C15.4477 14.5 15 14.9477 15 15.5C15 16.0523 15.4477 16.5 16 16.5ZM12 11.5C12 12.0523 11.5523 12.5 11 12.5C10.4477 12.5 10 12.0523 10 11.5C10 10.9477 10.4477 10.5 11 10.5C11.5523 10.5 12 10.9477 12 11.5ZM12 15.5C12 16.0523 11.5523 16.5 11 16.5C10.4477 16.5 10 16.0523 10 15.5C10 14.9477 10.4477 14.5 11 14.5C11.5523 14.5 12 14.9477 12 15.5ZM6 12.5C6.55228 12.5 7 12.0523 7 11.5C7 10.9477 6.55228 10.5 6 10.5C5.44772 10.5 5 10.9477 5 11.5C5 12.0523 5.44772 12.5 6 12.5ZM6 16.5C6.55228 16.5 7 16.0523 7 15.5C7 14.9477 6.55228 14.5 6 14.5C5.44772 14.5 5 14.9477 5 15.5C5 16.0523 5.44772 16.5 6 16.5Z' fill='%230066B6'/%3E%3C/svg%3E");
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  padding: 9px 37px 9px 20px !important;
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  background: #f4f7fc;
+  color: #3b4255;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4) inset;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  width: 100%;
+  background-position: center right 15px;
+  background-repeat: no-repeat;
+  font-family: inherit;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='11' viewBox='0 0 20 11' fill='none'%3E%3Cpath d='M1 1L10 10L19 1' stroke='%230066B6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+  &:hover {
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.4) inset,
+      0px 0px 5px 0px rgba(241, 90, 34, 0.6) inset;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 625px) {
+  .index-news__actual {
+    display: block;
+  }
+}
+
+/* Стили компонентов */
+
+@import "./blocks/pagination.scss";
+@import "./blocks/header.scss";
+@import "./blocks/tab.scss";
+@import "./blocks/scroll.scss";
+@import "./blocks/loader.scss";
+@import "./blocks/tab-section.scss";
+@import "./blocks/button.scss";
+@import "./blocks/button-service.scss";
+@import "./blocks/inputs-wrapper.scss";
+@import "./blocks/input-wrapper.scss";
+@import "./blocks/span.scss";
+@import "./blocks/switch.scss";
+@import "./blocks/fieldset.scss";
+@import "./blocks/label.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/checkbox-title.scss";
+@import "./blocks/input.scss";
+@import "./blocks/admin.scss";
+@import "./blocks/toggle-side.scss";
+@import "./blocks/uprow.scss";
+@import "./blocks/page.scss";
+@import "./blocks/body-container.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/dropdown.scss";
+@import "./blocks/login.scss";
+@import "./blocks/main.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/popular.scss";
+@import "./blocks/services.scss";
+@import "./blocks/index-news.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/external.scss";
+@import "./blocks/weekend.scss";
+@import "./blocks/form.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/label-radio.scss";
+@import "./blocks/radio-mark.scss";
+@import "./blocks/radio-title.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/adult.scss";
+@import "./blocks/modal-archive.scss";
+@import "./blocks/edit-form.scss";
+@import "./blocks/order.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/data.scss";
+@import "./blocks/status-color.scss";
+@import "./blocks/equipment.scss";
+@import "./blocks/incident.scss";
+@import "./blocks/archive.scss";
+@import "./blocks/hotel.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/web-number.scss";
+@import "./blocks/news-nav.scss";
+@import "./blocks/news.scss";
+@import "./blocks/actual.scss";
+@import "./blocks/past.scss";
+@import "./blocks/public.scss";
+@import "./blocks/modal-public.scss";
+@import "./blocks/newest.scss";
+@import "./blocks/preview.scss";
+@import "./blocks/popup.scss";
+@import "./blocks/structure.scss";
+@import "./blocks/overlay.scss";
+@import "./blocks/faq.scss";
+@import "./blocks/sort.scss";
+@import "./blocks/voits.scss";
+@import "./blocks/voit.scss";
+@import "./blocks/error.scss";
+@import "./blocks/review.scss";
+@import "./blocks/version.scss";
+@import "./blocks/stat.scss";
+@import "./blocks/schedule.scss";
+@import "./blocks/phone.scss";
+@import "./blocks/history.scss";
+@import "./blocks/fku.scss";
+@import "./blocks/managements.scss";
+@import "./blocks/filials.scss";
+@import "./blocks/departments.scss";
+@import "./blocks/documents.scss";
+@import "./blocks/document.scss";
+@import "./blocks/function.scss";
+@import "./blocks/online.scss";
+@import "./blocks/fns.scss";
+@import "./blocks/excel-btn.scss";
+@import "./blocks/newslink.scss";
+@import "./blocks/career.scss";
+@import "./blocks/cabinet.scss";
+@import "./blocks/welcome.scss";
+@import "./blocks/work.scss";
+@import "./blocks/toggle-dark.scss";
+@import "./blocks/message.scss";
+@import "./blocks/social.scss";
+@import "./blocks/notification.scss";
+@import "./blocks/alert.scss";
+@import "./blocks/err.scss";
+@import "./blocks/administrator.scss";
+@import "./blocks/profile/profile.scss";
+@import "./blocks/profile/profile-search.scss";
+// New docs;
+@import "./blocks/doc.scss";
+@import "./blocks/draft.scss";
+@import "./blocks/regulation.scss";
+@import "./blocks/photo.scss";
+/* Helpers */
+@import "./common/js-helpers.scss";
+@import "./common/css-helpers.scss";
+@import "./common/normalize.scss";
+
+/* vacancy */
+@import "./blocks/vacancy/vacancy-common.scss";
+
+/* document */
+@import "./blocks/document/document-common.scss";

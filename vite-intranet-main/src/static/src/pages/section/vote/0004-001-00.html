@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../../components/header.html').default %>
+      <main class="main">
+        <div class="main__wrapper">
+          <section class="intro">
+            <div class="intro__content">
+              <div class="container">
+              <h1 class="intro__title">Опрос № 0004-001-00</h1>
+
+              </div>
+            </div>
+            <!-- </div> -->
+          </section>
+          <section class="voit main-container">
+            <div class="voit__wrapper">
+              <p class="voit__description">
+                Этот опрос поможет нам лучше понять как улучшить процессы
+                работы. Никакие меры поощрения или наказания в зависимости от
+                результатов исследования предприниматься не будут. Вам
+                гарантируется анонимность и конфиденциальность ответов. Поэтому
+                просим Вас давать максимально правдивые, откровенные и
+                продуманные ответы. <br /><br />Вам предлагается 23 утверждения.
+                Пожалуйста, прочитайте внимательно каждое утверждение и решите,
+                чувствуете ли вы себя таким образом или нет. Если у вас никогда
+                не было такого чувства, выбирайте ответ «никогда». Если у вас
+                было такое чувство, укажите, как часто вы его ощущали в течение
+                последних месяцев. Опрос займет до 10 минут.
+              </p>
+              <form
+                action="/connect/voits/api/post.php"
+                class="voit__form"
+                enctype="multipart/form-data"
+              >
+                <input type="hidden" class="voit__input--id" name="id" />
+                <fieldset class="voit__fieldset">
+                  <legend class="voit__legend">Анкета</legend>
+                  <ul class="voit__list">
+                    <span class="voit__question">Ваш пол</span>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Мужской</span>
+                        <input
+                          type="radio"
+                          name="gender"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="man"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Женский</span>
+                        <input
+                          type="radio"
+                          name="gender"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="woman"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <span class="voit__question">Ваш возраст</span>
+                    <li class="voit__item">
+                      <label class="voit__label voit__label--text">
+                        <textarea
+                          type="text voit__label--text"
+                          name="age"
+                          class="voit__input voit__input--text"
+                          rows="2"
+                          cols="100"
+                          maxlength="50"
+                          required
+                        ></textarea>
+                      </label>
+                    </li>
+                    <span class="voit__question">Ваша сфера деятельности</span>
+                    <li class="voit__item">
+                      <label class="voit__label voit__label--text">
+                        <textarea
+                          type="text voit__label--text"
+                          name="work"
+                          class="voit__input voit__input--text"
+                          rows="5"
+                          cols="100"
+                          maxlength="100"
+                          required
+                        ></textarea>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="voit__fieldset">
+                  <legend class="voit__legend">Опросник</legend>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№1. Я чувствую себя эмоционально опустошенным</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="1"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="1"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="1"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="1"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="1"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="1"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="1"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№2. После работы я чувствую себя как «выжатый
+                      лимон»</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="2"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="2"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="2"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="2"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="2"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="2"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="2"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№3. Утром я чувствую усталость и нежелание идти
+                      на работу</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="3"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="3"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="3"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="3"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="3"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="3"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="3"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№4. Я хорошо понимаю, что чувствуют мои подчиненные
+                      и коллеги, и стараюсь учитывать это в интересах дела</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="4"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="4"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="4"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="4"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="4"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="4"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="4"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№5. Я чувствую, что общаюсь с некоторыми подчиненными
+                      и коллегами как с предметами (без теплоты и расположения
+                      к ним)</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="5"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="5"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="5"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="5"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="5"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="5"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="5"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№6. Я чувствую себя энергичным и эмоционально
+                      воодушевленным</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="6"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="6"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="6"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="6"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="6"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="6"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="6"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№7. Я умею находить правильное решение в конфликтных
+                      ситуациях, возникающих при общении с коллегами</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="7"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="7"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="7"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="7"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="7"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="7"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="7"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№8. Я чувствую угнетенность и апатию</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="8"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="8"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="8"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="8"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="8"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="8"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="8"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№9. Я уверен, что моя работа нужна людям</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="9"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="9"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="9"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="9"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="9"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="9"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="9"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№10. В последнее время я стал более «черствым»
+                      по отношению к тем, с кем работаю</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="10"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="10"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="10"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="10"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="10"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="10"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="10"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№11. Я замечаю, что моя работа ожесточает меня</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="11"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="11"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="11"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="11"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="11"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="11"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="11"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№12. У меня много планов на будущее, и я верю в их
+                      осуществление</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="12"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="12"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="12"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="12"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="12"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="12"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="12"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№13. Моя работа все больше меня разочаровывает</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="13"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="13"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="13"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="13"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="13"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="13"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="13"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№14. Мне кажется, что я слишком много работаю</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="14"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="14"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="14"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="14"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="14"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="14"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="14"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№15. Бывает, что мне действительно безразлично то, что
+                      происходит c некоторыми моими подчиненными
+                      и коллегами</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="15"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="15"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="15"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="15"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="15"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="15"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="15"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№16. Мне хочется уединиться и отдохнуть от всего
+                      и всех</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="16"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="16"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="16"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="16"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="16"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="16"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="16"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№17. Я легко могу создать атмосферу доброжелательности
+                      и сотрудничества в коллективе</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="17"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="17"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="17"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="17"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="17"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="17"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="17"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№18. Во время работы я чувствую приятное оживление</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="18"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="18"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="18"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="18"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="18"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="18"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="18"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№19. Благодаря своей работе я уже сделал в жизни много
+                      действительно ценного</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="19"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="19"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="19"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="19"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="19"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="19"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="19"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№20. Я чувствую равнодушие и потерю интереса ко многому,
+                      что радовало меня в моей работе</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="20"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="20"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="20"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="20"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="20"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="20"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="20"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№21. На работе я спокойно справляюсь с эмоциональными
+                      проблемами</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="21"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="21"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="21"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="21"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="21"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="21"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="21"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="voit__list">
+                    <span class="voit__question"
+                      >№22. В последнее время мне кажется, что коллеги
+                      и подчиненные все чаще перекладывают на меня груз своих
+                      проблем и обязанностей</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Никогда</span>
+                        <input
+                          type="radio"
+                          name="22"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="0"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень редко</span>
+                        <input
+                          type="radio"
+                          name="22"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="1"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Редко</span>
+                        <input
+                          type="radio"
+                          name="22"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="2"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Иногда</span>
+                        <input
+                          type="radio"
+                          name="22"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="3"
+                          checked
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Часто</span>
+                        <input
+                          type="radio"
+                          name="22"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="4"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Очень часто</span>
+                        <input
+                          type="radio"
+                          name="22"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="5"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <li class="voit__item">
+                      <label class="voit__label">
+                        <span class="voit__title">Ежедневно</span>
+                        <input
+                          type="radio"
+                          name="22"
+                          class="voit__input voit__input--radio visually-hidden"
+                          value="6"
+                        />
+                        <span class="voit__mark"></span>
+                      </label>
+                    </li>
+                    <span class="voit__question"
+                      >№23 Пожалуйста, припомните, когда Вы испытывали очень
+                      приятные или очень неприятные чувства в профессиональной
+                      деятельности, которой Вы занимаетесь сейчас или занимались
+                      когда либо. Расскажите пожалуйста, что при этом
+                      происходило</span
+                    >
+                    <li class="voit__item">
+                      <label class="voit__label voit__label--text">
+                        <textarea
+                          type="text"
+                          name="23"
+                          class="voit__input voit__input--text"
+                          maxlength="1000"
+                          rows="10"
+                          cols="100"
+                          required
+                        ></textarea>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <button class="weekend__btn voit__submit">Отправить</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+      <%= require('html-loader!../../components/footer.html').default %>
+    </div>
+  </body>
+</html>

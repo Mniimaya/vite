@@ -1,0 +1,69 @@
+.schedule {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.schedule__list {
+  border-radius: 10px;
+  background-color: #ffffff;
+  list-style-type: none;
+  padding: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  min-height: 389px;
+  transition: all 0.5s ease;
+}
+
+.schedule__list:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+}
+
+.schedule__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.schedule__mark {
+  max-height: 400px;
+  display: inline-block;
+  background-color: #0066b3;
+  transition: all 0.5s ease;
+}
+
+.schedule__mark:hover {
+  cursor: pointer;
+  background-color: #f15a22;
+  border-radius: 5px;
+}
+
+.schedule__visits {
+  font-weight: 700;
+}
+
+.schedule__uniq {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: #ffffff;
+  color: #ffffff;
+  min-width: 120px;
+  min-height: 40px;
+  border-radius: 5px;
+  z-index: 1;
+  padding-top: 10px;
+  transition: all 0.5s ease;
+  opacity: 1;
+  font-weight: 700;
+}
+
+.schedule__mark:hover + .schedule__uniq {
+  display: block;
+  background-color: #3b4256;
+}

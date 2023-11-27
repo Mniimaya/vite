@@ -1,0 +1,123 @@
+.actual__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.actual__item {
+  width: 400px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 20px 0px rgba(29, 47, 73, 0.1);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 1s ease;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.actual__views {
+  position: relative;
+  color: #3b4256;
+  font-size: 14px;
+  line-height: 1;
+  padding-left: 20px;
+  margin-right: 10px;
+}
+
+.actual__views:before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' fill='none'%3E%3Cpath d='M1.58665 9.61856C1.02888 8.97157 0.75 8.64807 0.75 7.6875C0.75 6.72693 1.02888 6.40343 1.58665 5.75644C2.70035 4.46459 4.56814 3 7.3125 3C10.0569 3 11.9246 4.46458 13.0384 5.75644C13.5961 6.40343 13.875 6.72693 13.875 7.6875C13.875 8.64807 13.5961 8.97157 13.0384 9.61856C11.9246 10.9104 10.0569 12.375 7.3125 12.375C4.56814 12.375 2.70035 10.9104 1.58665 9.61856Z' stroke='%233B4255' stroke-width='1.5'/%3E%3Cpath d='M9.1875 7.6875C9.1875 8.72303 8.34803 9.5625 7.3125 9.5625C6.27697 9.5625 5.4375 8.72303 5.4375 7.6875C5.4375 6.65197 6.27697 5.8125 7.3125 5.8125C8.34803 5.8125 9.1875 6.65197 9.1875 7.6875Z' stroke='%233B4255' stroke-width='1.5'/%3E%3C/svg%3E");
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.actual__likes {
+  position: relative;
+  color: #3b4256;
+  font-size: 14px;
+  line-height: 1;
+  padding-left: 18px;
+}
+
+.actual__likes:before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' fill='none'%3E%3Cpath d='M5.31864 12.4615L5.78175 11.8716L5.31864 12.4615ZM7.3125 3.69797L6.77323 4.2192C6.91454 4.3654 7.10916 4.44797 7.3125 4.44797C7.51584 4.44797 7.71046 4.3654 7.85177 4.2192L7.3125 3.69797ZM9.30636 12.4615L9.76947 13.0515L9.30636 12.4615ZM5.78175 11.8716C4.77172 11.0787 3.71279 10.3371 2.86998 9.39207C2.0529 8.47586 1.5 7.42823 1.5 6.07438H0C0 7.89844 0.765978 9.28649 1.75049 10.3904C2.70928 11.4655 3.93466 12.3286 4.85553 13.0515L5.78175 11.8716ZM1.5 6.07438C1.5 4.76778 2.24104 3.68361 3.23458 3.23137C4.18169 2.80026 5.48898 2.89052 6.77323 4.2192L7.85177 3.17673C6.183 1.45021 4.20904 1.13972 2.61315 1.86614C1.0637 2.57143 0 4.20307 0 6.07438H1.5ZM4.85553 13.0515C5.18933 13.3135 5.56405 13.6063 5.94778 13.8296C6.33134 14.0528 6.79477 14.25 7.3125 14.25V12.75C7.17398 12.75 6.98116 12.6954 6.70219 12.5331C6.42339 12.3709 6.12931 12.1444 5.78175 11.8716L4.85553 13.0515ZM9.76947 13.0515C10.6903 12.3286 11.9157 11.4655 12.8745 10.3904C13.859 9.28649 14.625 7.89844 14.625 6.07438H13.125C13.125 7.42823 12.5721 8.47586 11.755 9.39207C10.9122 10.3371 9.85328 11.0787 8.84325 11.8716L9.76947 13.0515ZM14.625 6.07438C14.625 4.20307 13.5613 2.57143 12.0118 1.86614C10.416 1.13972 8.442 1.45021 6.77323 3.17673L7.85177 4.2192C9.13602 2.89052 10.4433 2.80026 11.3904 3.23137C12.384 3.68361 13.125 4.76778 13.125 6.07438H14.625ZM8.84325 11.8716C8.49569 12.1444 8.20161 12.3709 7.92281 12.5331C7.64384 12.6954 7.45102 12.75 7.3125 12.75V14.25C7.83023 14.25 8.29366 14.0528 8.67722 13.8296C9.06095 13.6063 9.43567 13.3135 9.76947 13.0515L8.84325 11.8716Z' fill='%233B4255'/%3E%3C/svg%3E");
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+}
+
+.actual__item:hover {
+  box-shadow: 0px 0px 15px 0px rgba(29, 47, 73, 0.4);
+}
+
+.actual__container {
+  text-align: left;
+  background-color: #ffffff;
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.actual__image {
+  width: 400px;
+  height: 250px;
+  transition: all 1s ease;
+}
+
+.actual__date {
+  display: block;
+  color: #8a8c8e;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.actual__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.actual__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.actual__statistics {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}

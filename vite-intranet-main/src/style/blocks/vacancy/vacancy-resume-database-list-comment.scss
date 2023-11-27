@@ -1,0 +1,13 @@
+.vacancy-resume-database-list-comment {
+  width: 275px;
+  margin-right: 20px;
+
+  &__value {
+    margin: 0;
+    color: $color-blue-dark;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

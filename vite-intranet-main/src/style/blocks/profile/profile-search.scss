@@ -1,0 +1,241 @@
+.profile-search__content {
+  text-align: start;
+  height: 100%;
+}
+
+.profile-search__container {
+  height: 100%;
+}
+
+.profile-search__sort-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.profile-search__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  height: 100%;
+  position: relative;
+  padding-bottom: 30px;
+
+  .profile-search__item-nodata {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #bfc3c7;
+    row-gap: 10px;
+  }
+
+  .profile-search__item-nosearch {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #bfc3c7;
+
+    span {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    small {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
+
+    svg {
+      margin-bottom: 10px;
+    }
+  }
+
+  .profile-search__item {
+    box-shadow: 0px 0px 20px 0px rgba(29, 47, 73, 0.1);
+    border-radius: 20px;
+    padding: 20px 30px;
+    background-color: $color-white;
+    transition: $anim;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 0px 15px 0px rgba(29, 47, 73, 0.4);
+      transition: $anim;
+    }
+  }
+}
+
+.profile-search__item,
+.profile-search__item-container {
+  display: flex;
+}
+
+.profile-search__item .profile-search__item-wrapper:first-of-type {
+  margin-right: 30px;
+  border-right: 1px gray dashed;
+  padding-right: 30px;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
+
+.profile-search__item-photo-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: $color-white;
+  overflow: hidden;
+  margin-right: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(29, 47, 73, 0.1);
+}
+
+.profile-search__item-name {
+  color: $color-blue;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.profile-search__item-title {
+  color: $color-blue-dark;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.profile-search__item-content-inner-wrapper {
+  margin: 0;
+  margin-bottom: 5px;
+  span {
+    color: $color-blue-dark;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  #serviceData-phone {
+    color: $color-blue-dark;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.profile-search__item-departaments {
+  margin-bottom: 20px;
+}
+
+.profile-search__item-company {
+  color: #8a8c8e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 6px;
+
+  &::before {
+    content: url("/src/assets/img/cabinet/buildings-icon.svg");
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+}
+
+.profile-search__item-departament {
+  color: #8a8c8e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 6px;
+
+  &::before {
+    content: url("/src/assets/img/cabinet/database-icon.svg");
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+}
+
+.profile-search__item-service {
+  margin: 0;
+  margin-bottom: 5px;
+
+  span:first-of-type {
+    color: $color-blue-dark;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  span:last-of-type {
+    color: $color-blue-dark;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}
+
+.sort-profile {
+  display: flex;
+  flex-direction: column;
+
+  .sort-profile-form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 20px;
+      display: block;
+
+      span {
+        margin-bottom: 10px;
+        display: block;
+      }
+    }
+  }
+}

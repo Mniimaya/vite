@@ -1,0 +1,30 @@
+.error {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 150px 50px;
+}
+
+.error {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.error__title {
+  font-size: 40px;
+  color: #0066b3;
+}
+
+.error__wrapper {
+  max-width: 400px;
+  margin-right: 80px;
+}
+
+.error__description {
+  text-align: justify;
+}
+
+.error__image {
+  width: 392px;
+  height: 375px;
+}

@@ -1,0 +1,136 @@
+.data {
+  width: 100%;
+}
+
+/* .data__item {
+    display: table-row;
+} */
+
+.data__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data__row-header {
+  background-color: #3f79bd;
+}
+
+.data__header {
+  border: 1px solid #3b4256;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 3px;
+}
+
+.data__case {
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 3px 5px;
+  border: 1px solid #3f79bd;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+}
+
+.data__row:hover {
+  background-color: #c9ced1;
+  color: #ffffff;
+}
+
+.data__case-input {
+  cursor: text;
+  position: absolute;
+  margin: 0 auto;
+  border: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.data__inner {
+  padding: 30px 10px;
+  border: 1px solid #3f79bd;
+}
+
+.data__inner-buttons {
+  margin-bottom: 30px;
+}
+
+.data__inner-button {
+  color: #423c3c;
+  font-size: 14px;
+  line-height: 1;
+  width: 150px;
+  text-transform: uppercase;
+  padding: 9px 5px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.data__inner-button:hover {
+  background-color: #c9ced1;
+  color: #ffffff;
+}
+
+.data__inner-input {
+  margin-bottom: 30px;
+  border: 1px solid #3f79bd;
+}
+
+.data__inner-button--comment {
+  width: 150px;
+  padding: 5px 20px;
+  cursor: text;
+  font-size: 20px;
+  line-height: 1.2;
+  border-radius: 20px;
+  background-color: #3f79bd;
+  border: 2px solid #3f79bd;
+  color: #ffffff;
+  margin-right: 30px;
+}
+
+.data__inner-button--close {
+  width: 150px;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1.2;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 2px solid #3f79bd;
+  color: #3f79bd;
+}
+
+.data__inner-button-form:hover {
+  color: #ffffff;
+  background-color: #c9ced1;
+  border: 2px solid #c9ced1;
+}
+
+.data__inner-container {
+  display: flex;
+}
+
+.data__inner-history {
+  width: 50%;
+}
+
+.data__inner-title {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.data__inner-comment {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}

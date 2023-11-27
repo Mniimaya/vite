@@ -1,0 +1,84 @@
+.doc {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(29, 47, 73, 0.1);
+    border-radius: 13px;
+    margin-bottom: 20px;
+    transition: $anim;
+    &:hover {
+      cursor: pointer;
+      transition: $anim;
+      box-shadow: 0px 0px 15px 0px rgba(29, 47, 73, 0.4);
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: #3b4255;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    max-width: 1000px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #8a8c8e;
+    position: relative;
+  }
+
+  &__type {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2dbdb6;
+  }
+
+  &__number {
+    font-size: 16px;
+    line-height: 19px;
+    color: #8a8c8e;
+  }
+
+  &__date {
+    font-size: 16px;
+    line-height: 19px;
+    color: #8a8c8e;
+  }
+}

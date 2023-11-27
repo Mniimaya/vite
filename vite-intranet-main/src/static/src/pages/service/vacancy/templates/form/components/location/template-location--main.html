@@ -1,0 +1,151 @@
+<template class="template template--location-component">
+  <div class="vacancy-form-component vacancy-form-component--location">
+    <div
+      class="vacancy-form-item vacancy-form-item--region vacancy-form-item--with-input"
+    >
+      <label class="vacancy-form-label vacancy-helpers-required">Регион</label>
+      <div class="vacancy-form-item__wrapper">
+        <input
+          type="text"
+          class="vacancy-form-input vacancy-form-input--region vacancy-form-input--normal"
+          placeholder="Москва"
+          name="region[]"
+        />
+        <button
+          class="vacancy-form-button vacancy-form-button--clear vacancy-helpers-hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+          >
+            <circle cx="9" cy="9" r="9" fill="#8A8C8E" />
+            <path d="M13 5L5.00007 12.9999" stroke="white" stroke-width="2" />
+            <path
+              d="M13 13.0005L5.00007 5.00055"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+      <p class="vacancy-form-error">Поле не заполнено</p>
+    </div>
+    <div
+      class="vacancy-form-item vacancy-form-item--address vacancy-form-item--with-input"
+    >
+      <label class="vacancy-form-label vacancy-helpers-required"
+        >Адрес(а)</label
+      >
+      <div class="vacancy-form-item__wrapper">
+        <input
+          type="text"
+          class="vacancy-form-input vacancy-form-input--address vacancy-form-input--normal"
+          placeholder="Пример: Походный проезд, д. 3, стр.1"
+          name="address[]"
+        />
+        <button
+          class="vacancy-form-button vacancy-form-button--clear vacancy-helpers-hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+          >
+            <circle cx="9" cy="9" r="9" fill="#8A8C8E" />
+            <path d="M13 5L5.00007 12.9999" stroke="white" stroke-width="2" />
+            <path
+              d="M13 13.0005L5.00007 5.00055"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+      <p class="vacancy-form-error">Поле не заполнено</p>
+    </div>
+    <div
+      class="vacancy-form-item vacancy-form-item--metro vacancy-form-item--with-input"
+    >
+      <label class="vacancy-form-label">Метро</label>
+      <div class="vacancy-form-item__wrapper">
+        <input
+          type="text"
+          class="vacancy-form-input vacancy-form-input--metro vacancy-form-input--normal"
+          name="metro[]"
+        />
+        <button
+          class="vacancy-form-button vacancy-form-button--clear vacancy-helpers-hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+          >
+            <circle cx="9" cy="9" r="9" fill="#8A8C8E" />
+            <path d="M13 5L5.00007 12.9999" stroke="white" stroke-width="2" />
+            <path
+              d="M13 13.0005L5.00007 5.00055"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="vacancy-form-component__actions">
+      <button class="vacancy-form-button vacancy-form-button--delete-location">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <g opacity="0.9">
+            <path
+              d="M18.4336 5L4.99857 18.435"
+              stroke="#D71920"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18.4336 18.4351L4.99857 5.00003"
+              stroke="#D71920"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+      </button>
+    </div>
+    <div class="vacancy-form-component__hidden vacancy-helpers-hidden">
+      <input
+        type="hidden"
+        name="status_address[]"
+        class="vacancy-form-input--status"
+        value="0"
+      />
+      <input
+        type="hidden"
+        name="id_request[]"
+        class="vacancy-form-input--id-request"
+        value=""
+      />
+      <input
+        type="hidden"
+        name="id_address[]"
+        class="vacancy-form-input--id-address"
+        value=""
+      />
+    </div>
+  </div>
+</template>

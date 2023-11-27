@@ -1,0 +1,94 @@
+.vacancy-form-item {
+  position: relative;
+  display: flex;
+  text-align: left;
+
+  &__wrapper {
+    position: relative;
+    width: fit-content;
+
+    .vacancy-form-button--clear {
+      position: absolute;
+      top: -7px;
+      right: -7px;
+    }
+  }
+
+  &__counter {
+    text-align: right;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: rgba($color: #000000, $alpha: 0.6);
+  }
+
+  &--with-input,
+  &--with-select {
+    min-width: 275px;
+    flex-direction: column;
+  }
+
+  &--name-of-vacancy {
+    margin-right: 40px;
+  }
+
+  &--name-of-position {
+    display: flex;
+  }
+
+  &--vacancy-no-name {
+    padding-top: 20px;
+  }
+
+  &--department {
+    margin-left: auto;
+  }
+
+  &--number-of-employees {
+    margin-right: 40px;
+  }
+
+  &--age-from,
+  &--age-to,
+  &--salary-from,
+  &--salary-to {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &--address {
+    width: 590px;
+    margin: 0 40px;
+
+    .vacancy-form-item__wrapper {
+      width: 100%;
+    }
+
+    .vacancy-form-input {
+      width: 100%;
+    }
+  }
+
+  &--with-textarea {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--with-select-reply {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--reply {
+    width: 250px;
+    flex-direction: column;
+  }
+
+  &--modal-reply {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+  }
+}

@@ -1,0 +1,37 @@
+.voits {
+  margin: 0 auto;
+  max-width: 1400px;
+  background-color: #ffffff;
+  padding: 150px;
+}
+
+.voits__list {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.voits__item {
+  width: auto;
+  text-align: left;
+  transition: all 0.5s ease;
+  margin-bottom: 30px;
+  border-bottom: 1px dotted #3b4256;
+}
+
+.voits__item:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+  border-radius: 8px;
+  border-bottom: 1px dotted transparent;
+}
+
+.voits__link {
+  padding: 20px;
+  display: block;
+  color: #3b4256;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}

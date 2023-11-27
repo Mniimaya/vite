@@ -1,0 +1,38 @@
+.vacancy-helpers-underline {
+  text-decoration: underline;
+}
+.vacancy-helpers-required {
+  &::after {
+    content: "*";
+    position: relative;
+    top: 0;
+    right: 0;
+    color: #d71920;
+  }
+}
+
+.vacancy-helpers-error {
+  input,
+  select,
+  .vacancy-form-radio-custom {
+    outline: 1px solid #d71920;
+
+    &:hover {
+      box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4) inset;
+      outline: 1px solid #d71920;
+    }
+
+    &:focus {
+      box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4) inset;
+      outline: 1px solid #d71920;
+    }
+  }
+
+  .vacancy-form-error {
+    visibility: visible;
+  }
+}
+
+.vacancy-helpers-hidden {
+  display: none !important;
+}

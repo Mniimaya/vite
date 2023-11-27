@@ -1,0 +1,584 @@
+.notification {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.notification__button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  button {
+    max-width: 286px;
+  }
+}
+
+.notification__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification__inner-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-height: 400px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(29, 47, 73, 0.1);
+  border-radius: 15px;
+}
+
+.notification__chats-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  min-height: 400px;
+}
+
+.notification__title {
+  margin: 0;
+  text-align: left;
+}
+
+.notification__chats {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+}
+
+.notification__headline {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px;
+  min-height: 80px;
+  box-shadow: 0px 0px 20px rgba(29, 47, 73, 0.1);
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.notification__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 10px;
+}
+
+.notification__service {
+  color: #0066b3;
+  text-align: left;
+  margin: 0;
+}
+
+.notification__author {
+  color: #0066b3;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.notification__theme {
+  font-weight: 700;
+  color: #0066b3;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.notification__up {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification__input {
+  margin-bottom: 10px;
+}
+
+.notification__search-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.notification__list-search {
+  z-index: 1;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  max-width: 528px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background-color: #3b4255;
+  color: #ffffff;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.notification__validation {
+  position: absolute;
+  color: red;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.notification__button-add {
+  width: fit-content;
+  align-self: flex-end;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: right;
+  color: #0066b3;
+}
+
+.notification__button-add::before {
+  content: "";
+  background-image: url("/src/assets/img/notification/plus.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.notification__info-input {
+  padding-right: 45px;
+}
+
+.notification__participant-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.notification__participant-button::before {
+  content: "";
+  background-image: url("/src/assets/img/notification/remove.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.notification__button-remove {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+}
+
+.notification__button-remove::before {
+  content: "";
+  background-image: url("/src/assets/img/notification/remove.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.notification__find {
+  padding: 10px;
+  box-shadow: 0px 0px 20px rgba(29, 47, 73, 0.1);
+}
+
+.notification__find:hover {
+  background-color: #787d8a;
+  cursor: pointer;
+}
+
+.notification__chats {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 382px;
+}
+
+.notification__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px dotted #3b4255;
+  padding: 5px;
+}
+
+.notification__item--actual {
+  background-color: #dddee1;
+}
+
+.notification__item:hover {
+  cursor: pointer;
+  background-color: #f5f7fb;
+}
+
+.notification__new-chat {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.notification__new-chat::before {
+  content: "";
+  background-image: url("/src/assets/img/notification/plus.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.notification__admin-btn--modal {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.notification__admin-btn--modal::before {
+  content: "";
+  background-image: url("/src/assets/img/notification/participant.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.notification__admin-btn--search {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.notification__admin-btn--search::before {
+  content: "";
+  background-image: url("/src/assets/img/notification/search.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  margin: auto;
+}
+
+.notification__admin-btn--exit {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.notification__admin-btn--exit::before {
+  content: "";
+  background-image: url("/src/assets/img/notification/exit.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  margin: auto;
+}
+
+.notification__admin-btn--remove {
+  font-family: "PF Din Text Cond Pro";
+  background-color: transparent;
+  border: none;
+  color: #d71920;
+  font-size: 16px;
+}
+
+.notification__update-chats {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all 0.5s ease;
+  transform: rotate(0deg);
+  bottom: 3px;
+}
+
+.notification__update-chats::before {
+  content: "";
+  background-image: url("/src/assets/img/notification/update.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.notification__link {
+  color: #3b4255;
+  text-decoration: none;
+}
+
+.notification__participant {
+  display: flex;
+  align-items: center;
+}
+
+.notification__participants {
+  text-align: left;
+}
+
+.notification__participants:hover {
+  color: chocolate;
+  cursor: pointer;
+}
+
+.notification__form {
+  display: flex;
+  position: relative;
+}
+
+.notification__label-file {
+  position: relative;
+  cursor: pointer;
+}
+
+.notification__label-file:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("/src/assets/img/icons/file.svg");
+  top: 8px;
+  right: 0;
+  background-repeat: no-repeat;
+}
+
+.notification__label-file--true:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("/src/assets/img/notification/remove.svg");
+  top: 8px;
+  right: 0;
+  background-repeat: no-repeat;
+}
+
+.notification__submit {
+  min-width: 0;
+  width: 160px;
+  padding: 0;
+}
+
+.notification__messages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 10px;
+  max-height: 276px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.notification__message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #3b4255;
+  max-width: 50%;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.notification__body-text {
+  width: 345px;
+  background: #c2dbef;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 0;
+  word-break: break-word;
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.notification__message--date {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  background-color: #d0d1d4;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 3px 20px;
+  border-radius: 50px;
+}
+
+.notification__author-message {
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.notification__time {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+}
+
+.notification__message--my {
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.notification__link-file {
+  text-align: left;
+  display: block;
+}
+.notification__link-file:first-child {
+  margin-right: 5px;
+}
+.notification__message--my .notification__time {
+  text-align: right;
+}
+
+.notification__message--my .notification__link-file {
+  text-align: right;
+}
+
+.notification__message--my .notification__author-message {
+  text-align: right;
+}
+
+.notification__past {
+  text-align: left;
+  font-size: 16px;
+}
+
+.notification__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255, 0.95);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 2;
+  overflow: auto;
+}
+
+.notification__content {
+  background-color: #ffffff;
+  margin: auto;
+  max-width: 800px;
+  padding: 50px;
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 7%);
+
+  .button__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
+
+.notification__content:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+}
+
+.notification__admin {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification__admin-inner {
+  flex: 1;
+}
+
+.notification__admin-btn {
+  cursor: pointer;
+}
+
+.notification__participant-button {
+  cursor: pointer;
+}
+
+.notification__wrapper-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.notification__unread {
+  background-color: #2dbdb6;
+  border-radius: 10%;
+  color: #ffffff;
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+.notification__links-wrapper {
+  display: flex;
+}
+
+.notification__input--name {
+  margin-bottom: 10px;
+}

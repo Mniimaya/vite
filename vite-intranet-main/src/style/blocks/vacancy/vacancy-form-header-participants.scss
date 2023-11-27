@@ -1,0 +1,54 @@
+.vacancy-form-header-participants {
+  margin-bottom: 35px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    &--empty {
+      font-size: 18px;
+      line-height: 22px;
+      color: #8A8C8E;
+    }
+  }
+
+  &__basic {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3B4255;
+  }
+
+  &__additional {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8A8C8E;
+  }
+
+  &__role,
+  &__fullname,
+  &__view,
+  &__interview {
+    margin: 0;
+  }
+
+  &__role {
+    color: rgba(#3B4255, 0.8);
+  }
+}

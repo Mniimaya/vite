@@ -1,0 +1,47 @@
+.vacancy-resume-database-form-row {
+  display: flex;
+
+  &--common {
+    column-gap: 80px;
+  }
+
+  &--contacts {
+    display: flex;
+    flex-direction: column;
+
+    .vacancy-resume-database-form-row {
+      display: flex;
+      column-gap: 40px;
+    }
+  }
+
+  &--experience {
+    display: flex;
+    flex-direction: column;
+
+    .vacancy-resume-database-form-row {
+      display: flex;
+      column-gap: 40px;
+    }
+  }
+
+  &--education {
+    display: flex;
+    flex-direction: column;
+
+    .vacancy-resume-database-form-row {
+      display: flex;
+      column-gap: 40px;
+    }
+  }
+
+  &--languages {
+    display: flex;
+    flex-direction: column;
+
+    .vacancy-resume-database-form-row {
+      display: flex;
+      column-gap: 40px;
+    }
+  }
+}

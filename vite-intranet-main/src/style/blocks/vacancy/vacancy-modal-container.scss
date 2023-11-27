@@ -1,0 +1,15 @@
+.vacancy-modal-container {
+  background-color: rgba(41, 42, 42, 0.7);
+  position: fixed;
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all var(--anim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

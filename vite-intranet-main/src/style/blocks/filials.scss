@@ -1,0 +1,74 @@
+.filials {
+  background-color: #ffffff;
+  max-width: 1120px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 52px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.filials__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filials__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.filials__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filials__image {
+  width: 400px;
+  height: 300px;
+  margin-right: 25px;
+}
+
+.filials__content {
+  display: flex;
+  max-width: 610px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.filials__date {
+  margin-bottom: 20px;
+}
+
+.filials__history {
+  margin-bottom: 20px;
+}
+
+.filials__info {
+  margin-bottom: 20px;
+}
+
+.filials__awards {
+  margin-bottom: 20px;
+}
+
+.filials__structure {
+  margin-bottom: 20px;
+}
+
+.filials__headline {
+  font-weight: 500;
+}
+
+.filials__employees-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.filials__sn {
+  margin: 0;
+}

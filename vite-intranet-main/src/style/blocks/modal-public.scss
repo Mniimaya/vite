@@ -1,0 +1,162 @@
+.modal-public {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 20;
+}
+
+.modal-public__btn-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.modal-public__container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 800px;
+  max-height: min-content;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  transition: all 0.5s ease;
+}
+
+.modal-public__container:hover {
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px 0 rgb(0 0 0 / 30%);
+}
+
+.modal-public__fieldset {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 10px;
+  border: none;
+}
+
+.modal-public__headline {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-public__label {
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.modal-public__label--comment {
+  margin-bottom: 7px;
+}
+.modal-public__input {
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.modal-public__input:disabled {
+  cursor: not-allowed;
+}
+
+.modal-public__title {
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.modal-public__label--radio {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-public__label--radio:hover .modal-public__mark {
+  border: 1px solid #f15a22;
+}
+
+.modal-public__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 11px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #3b4256;
+  cursor: pointer;
+}
+
+.modal-public__input--status[type="radio"]:checked
+  + .modal-public__mark::before {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  background-color: #f15a22;
+  border-radius: 5px;
+}
+
+.modal-public__comment-wrapper {
+  flex-direction: column;
+}
+
+.modal-public__photos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.modal-public__photos-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 10px;
+  position: relative;
+}
+
+.modal-public__label--files {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+
+.modal-public__label--files:hover .modal-public__icon {
+  cursor: pointer;
+  stroke: #f15a22;
+}
+
+.modal-public__icon {
+  stroke: #0066b3;
+}
+
+.modal-public__icon--attached {
+  stroke: #f15a22;
+}
+
+.modal-public__photo-wrapper:hover::before {
+  content: "";
+  background-image: url("/src/assets/img/icons/del.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}

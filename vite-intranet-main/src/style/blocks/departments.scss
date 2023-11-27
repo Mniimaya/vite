@@ -1,0 +1,115 @@
+.departments {
+  background-color: #ffffff;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 52px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.departments__wrapper-flex {
+  display: flex;
+  column-gap: 50px;
+}
+
+.departments__title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 47px;
+}
+
+.departments__photo-intro {
+  flex-shrink: 0;
+  flex-basis: 547px;
+}
+
+.departments__title-h2 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.departments__list {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding-left: 25px;
+
+  li {
+    list-style: disc;
+  }
+
+  &--margin {
+    margin-bottom: 20px;
+  }
+
+  &--advantages {
+    padding-left: 0;
+  }
+
+  &--advantages li {
+    list-style: none;
+    position: relative;
+    padding-left: 35px;
+  }
+
+  &--advantages li::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12.0036 15.2C7.39569 15.2 6.57938 10.6076 6.43477 6.96518C6.39455 5.95198 6.37443 5.44538 6.75501 4.97667C7.13558 4.50795 7.59107 4.4311 8.50206 4.27739C9.40131 4.12567 10.5768 4 12.0036 4C13.4305 4 14.606 4.12567 15.5052 4.27739C16.4162 4.4311 16.8717 4.50795 17.2523 4.97667C17.6328 5.44538 17.6127 5.95198 17.5725 6.96518C17.4279 10.6076 16.6116 15.2 12.0036 15.2Z' stroke='%230066B6' stroke-width='1.5'/%3E%3Cpath d='M17.5984 6.3999L18.3573 6.65287C19.1494 6.91688 19.5454 7.04889 19.7719 7.36317C19.9984 7.67744 19.9984 8.09489 19.9984 8.92977L19.9984 8.98779C19.9984 9.67639 19.9984 10.0207 19.8326 10.3024C19.6669 10.5841 19.3659 10.7513 18.764 11.0857L16.3984 12.3999' stroke='%230066B6' stroke-width='1.5'/%3E%3Cpath d='M6.39995 6.3999L5.64105 6.65287C4.84901 6.91688 4.45299 7.04889 4.22648 7.36317C3.99997 7.67744 3.99998 8.09489 4 8.92977L4 8.98779C4.00002 9.67639 4.00003 10.0207 4.16578 10.3024C4.33153 10.5841 4.6325 10.7513 5.23444 11.0857L7.59995 12.3999' stroke='%230066B6' stroke-width='1.5'/%3E%3Cpath d='M12 16V17.6' stroke='%230066B6' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M14.8031 20H9.20312L9.4745 18.6431C9.54929 18.2692 9.87762 18 10.259 18H13.7473C14.1286 18 14.457 18.2692 14.5317 18.6431L14.8031 20Z' stroke='%230066B6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.8031 20H7.20312' stroke='%230066B6' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    left: 0;
+  }
+}
+
+.departments__wrapper {
+  margin-bottom: 35px;
+}
+
+.departments__text {
+  margin-bottom: 20px;
+}
+
+.departments__image {
+  flex-basis: 358px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  img {
+    width: 358px;
+    height: 226px;
+    margin-bottom: 5px;
+  }
+
+  figcaption {
+    color: #bfc3c7;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}
+
+.departments__wrapper-margin {
+  margin-bottom: 35px;
+}
+
+.departments__image-wrapper {
+  display: flex;
+  column-gap: 40px;
+}

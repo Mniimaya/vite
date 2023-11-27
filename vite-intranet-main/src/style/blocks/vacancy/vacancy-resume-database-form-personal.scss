@@ -1,0 +1,10 @@
+.vacancy-resume-database-form-personal {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+
+  .vacancy-resume-database-form-row {
+    display: flex;
+    column-gap: 40px;
+  }
+}

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../components/header.html').default %>
+      <main class="main">
+        <div class="main__wrapper">
+          <section class="intro">
+            <div class="intro__content">
+              <div class="container">
+              <h1 class="intro__title">Руководство</h1>
+              <section class="popular">
+                <div class="popular__wrapper">
+                  <ul class="popular__list popular__list--documents">
+                    <li class="button-service">
+                      <a
+                        href="/section/documents.html"
+                        class="button-service__link"
+                      >
+                        <div
+                          class="button-service__link-wrapper-intro button-service__link-wrapper"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none" class="button-service__icon">
+                            <path d="M13 11.25C12.5858 11.25 12.25 11.5858 12.25 12C12.25 12.4142 12.5858 12.75 13 12.75H27C27.4142 12.75 27.75 12.4142 27.75 12C27.75 11.5858 27.4142 11.25 27 11.25H13Z" fill="#0066B3"/>
+                            <path d="M12.25 17C12.25 16.5858 12.5858 16.25 13 16.25H27C27.4142 16.25 27.75 16.5858 27.75 17C27.75 17.4142 27.4142 17.75 27 17.75H13C12.5858 17.75 12.25 17.4142 12.25 17Z" fill="#0066B3"/>
+                            <path d="M13 21.25C12.5858 21.25 12.25 21.5858 12.25 22C12.25 22.4142 12.5858 22.75 13 22.75H27C27.4142 22.75 27.75 22.4142 27.75 22C27.75 21.5858 27.4142 21.25 27 21.25H13Z" fill="#0066B3"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.9998 6.03149V23.1499H38.4999C39.7978 23.1499 40.8499 24.202 40.8499 25.4999V38.9999C40.8499 40.2978 39.7978 41.3499 38.4999 41.3499H4.4999C3.20203 41.3499 2.1499 40.2978 2.1499 38.9999V30.9999C2.1499 29.702 3.20203 28.6499 4.4999 28.6499H6V9.03149C6 7.0812 7.49669 5.45437 9.48526 5.08071C9.94714 3.31301 11.6681 2 13.7204 2H33.6427C36.0491 2 37.9998 3.80496 37.9998 6.03149ZM30.2794 5H11.1186C11.5514 4.06677 12.5534 3.4131 13.7204 3.4131H33.6427C35.2056 3.4131 36.4726 4.5854 36.4726 6.03149V23.1499H34.6364V9.03149C34.6364 6.80496 32.6857 5 30.2794 5ZM18.6597 28.6499H7.5272V9.03149C7.5272 7.5854 8.79415 6.4131 10.357 6.4131H30.2794C31.8422 6.4131 33.1092 7.5854 33.1092 9.03149V23.1499H30.8401C30.4892 23.1499 30.1428 23.2285 29.8262 23.3799L18.9401 28.5863C18.8525 28.6282 18.7567 28.6499 18.6597 28.6499ZM30.8401 24.8499C30.7431 24.8499 30.6473 24.8716 30.5597 24.9135L19.6736 30.1199C19.357 30.2713 19.0106 30.3499 18.6597 30.3499H4.4999C4.14092 30.3499 3.8499 30.6409 3.8499 30.9999V38.9999C3.8499 39.3589 4.14092 39.6499 4.4999 39.6499H38.4999C38.8589 39.6499 39.1499 39.3589 39.1499 38.9999V25.4999C39.1499 25.1409 38.8589 24.8499 38.4999 24.8499H30.8401Z" fill="#0066B3"/>
+                            </svg>
+                          <span class="button-service__title"
+                            >Уставные документы</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="button-service button-service--active">
+                      <a
+                        href="/section/managements.html"
+                        class="button-service__link"
+                      >
+                        <div
+                          class="button-service__link-wrapper-intro button-service__link-wrapper"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none" class="button-service__icon">
+                            <path d="M11.7064 6.84118C14.6056 4.90398 18.0142 3.87 21.5011 3.87C23.8163 3.87 26.1088 4.32601 28.2478 5.212C30.3868 6.09797 32.3303 7.39663 33.9674 9.03372C35.6045 10.6708 36.9031 12.6143 37.7891 14.7533C38.6751 16.8922 39.1311 19.1848 39.1311 21.5C39.1311 24.9869 38.0971 28.3955 36.1599 31.2947C34.2227 34.1939 31.4693 36.4536 28.2478 37.788C25.0264 39.1224 21.4816 39.4715 18.0616 38.7913C14.6418 38.111 11.5004 36.4319 9.03479 33.9663C6.56923 31.5007 4.89012 28.3593 4.20986 24.9394C3.5296 21.5195 3.87874 17.9747 5.21311 14.7533C6.5475 11.5318 8.80718 8.77842 11.7064 6.84118ZM13.3786 33.6561C15.7829 35.2626 18.6095 36.12 21.5011 36.12C25.3786 36.12 29.0972 34.5797 31.839 31.8379C34.5808 29.0961 36.1211 25.3774 36.1211 21.5C36.1211 18.6084 35.2636 15.7818 33.6572 13.3776C32.0507 10.9733 29.7674 9.09943 27.0959 7.99289C24.4245 6.8863 21.4849 6.59683 18.6489 7.16093C15.8129 7.72503 13.2079 9.11743 11.1632 11.1621C9.11855 13.2067 7.72616 15.8118 7.162 18.6478C6.59789 21.4838 6.88743 24.4234 7.99396 27.0948C9.10055 29.7663 10.9744 32.0496 13.3786 33.6561Z" fill="#0066B6" fill-opacity="0.1" stroke="#0066B6"/>
+                            <path d="M21.5004 10.4634C19.7616 10.4636 18.094 11.1545 16.8645 12.384C15.6347 13.6138 14.9438 15.2817 14.9438 17.0209C14.9438 17.5721 15.1628 18.1007 15.5526 18.4904C15.9423 18.8803 16.4709 19.0992 17.0222 19.0992C17.5734 19.0992 18.102 18.8803 18.4917 18.4904C18.8815 18.1007 19.1005 17.5721 19.1005 17.0209C19.1005 16.546 19.2413 16.0819 19.5051 15.687C19.7689 15.2922 20.1439 14.9845 20.5826 14.8028C21.0212 14.6211 21.504 14.5735 21.9697 14.6661C22.4354 14.7588 22.8632 14.9874 23.199 15.3232C23.5347 15.659 23.7634 16.0868 23.856 16.5525C23.9487 17.0182 23.9011 17.5009 23.7194 17.9396C23.5377 18.3783 23.2299 18.7533 22.8351 19.0171C22.4404 19.2809 21.9762 19.4217 21.5013 19.4217C20.9501 19.4217 20.4215 19.6407 20.0317 20.0304C19.642 20.4202 19.423 20.9488 19.423 21.5V25.0834C19.423 25.6346 19.642 26.1632 20.0317 26.553C20.4215 26.9428 20.9501 27.1617 21.5013 27.1617C22.0525 27.1617 22.5812 26.9428 22.9709 26.553C23.3607 26.1632 23.5797 25.6346 23.5797 25.0834V23.2163C25.0058 22.7481 26.2299 21.8026 27.0432 20.5359C27.8954 19.2085 28.2391 17.6177 28.0109 16.0568C27.7827 14.4959 26.998 13.0702 25.8014 12.0422C24.605 11.0145 23.0776 10.4538 21.5004 10.4634Z" fill="#0066B6" fill-opacity="0.1" stroke="#0066B6"/>
+                            <path d="M23.0061 30.4583C23.0061 31.2895 22.3323 31.9633 21.5011 31.9633C20.6699 31.9633 19.9961 31.2895 19.9961 30.4583C19.9961 29.6271 20.6699 28.9533 21.5011 28.9533C22.3323 28.9533 23.0061 29.6271 23.0061 30.4583Z" fill="#0066B6" fill-opacity="0.1" stroke="#0066B6"/>
+                          </svg>
+                          <span class="button-service__title">Руководство</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="button-service">
+                      <a
+                        href="/section/structure.html"
+                        class="button-service__link"
+                      >
+                        <div
+                          class="button-service__link-wrapper-intro button-service__link-wrapper"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none" class="button-service__icon">
+                            <path d="M11.7064 6.84118C14.6056 4.90398 18.0142 3.87 21.5011 3.87C23.8163 3.87 26.1088 4.32601 28.2478 5.212C30.3868 6.09797 32.3303 7.39663 33.9674 9.03372C35.6045 10.6708 36.9031 12.6143 37.7891 14.7533C38.6751 16.8922 39.1311 19.1848 39.1311 21.5C39.1311 24.9869 38.0971 28.3955 36.1599 31.2947C34.2227 34.1939 31.4693 36.4536 28.2478 37.788C25.0264 39.1224 21.4816 39.4715 18.0616 38.7913C14.6418 38.111 11.5004 36.4319 9.03479 33.9663C6.56923 31.5007 4.89012 28.3593 4.20986 24.9394C3.5296 21.5195 3.87874 17.9747 5.21311 14.7533C6.5475 11.5318 8.80718 8.77842 11.7064 6.84118ZM13.3786 33.6561C15.7829 35.2626 18.6095 36.12 21.5011 36.12C25.3786 36.12 29.0972 34.5797 31.839 31.8379C34.5808 29.0961 36.1211 25.3774 36.1211 21.5C36.1211 18.6084 35.2636 15.7818 33.6572 13.3776C32.0507 10.9733 29.7674 9.09943 27.0959 7.99289C24.4245 6.8863 21.4849 6.59683 18.6489 7.16093C15.8129 7.72503 13.2079 9.11743 11.1632 11.1621C9.11855 13.2067 7.72616 15.8118 7.162 18.6478C6.59789 21.4838 6.88743 24.4234 7.99396 27.0948C9.10055 29.7663 10.9744 32.0496 13.3786 33.6561Z" fill="#0066B6" fill-opacity="0.1" stroke="#0066B6"/>
+                            <path d="M21.5004 10.4634C19.7616 10.4636 18.094 11.1545 16.8645 12.384C15.6347 13.6138 14.9438 15.2817 14.9438 17.0209C14.9438 17.5721 15.1628 18.1007 15.5526 18.4904C15.9423 18.8803 16.4709 19.0992 17.0222 19.0992C17.5734 19.0992 18.102 18.8803 18.4917 18.4904C18.8815 18.1007 19.1005 17.5721 19.1005 17.0209C19.1005 16.546 19.2413 16.0819 19.5051 15.687C19.7689 15.2922 20.1439 14.9845 20.5826 14.8028C21.0212 14.6211 21.504 14.5735 21.9697 14.6661C22.4354 14.7588 22.8632 14.9874 23.199 15.3232C23.5347 15.659 23.7634 16.0868 23.856 16.5525C23.9487 17.0182 23.9011 17.5009 23.7194 17.9396C23.5377 18.3783 23.2299 18.7533 22.8351 19.0171C22.4404 19.2809 21.9762 19.4217 21.5013 19.4217C20.9501 19.4217 20.4215 19.6407 20.0317 20.0304C19.642 20.4202 19.423 20.9488 19.423 21.5V25.0834C19.423 25.6346 19.642 26.1632 20.0317 26.553C20.4215 26.9428 20.9501 27.1617 21.5013 27.1617C22.0525 27.1617 22.5812 26.9428 22.9709 26.553C23.3607 26.1632 23.5797 25.6346 23.5797 25.0834V23.2163C25.0058 22.7481 26.2299 21.8026 27.0432 20.5359C27.8954 19.2085 28.2391 17.6177 28.0109 16.0568C27.7827 14.4959 26.998 13.0702 25.8014 12.0422C24.605 11.0145 23.0776 10.4538 21.5004 10.4634Z" fill="#0066B6" fill-opacity="0.1" stroke="#0066B6"/>
+                            <path d="M23.0061 30.4583C23.0061 31.2895 22.3323 31.9633 21.5011 31.9633C20.6699 31.9633 19.9961 31.2895 19.9961 30.4583C19.9961 29.6271 20.6699 28.9533 21.5011 28.9533C22.3323 28.9533 23.0061 29.6271 23.0061 30.4583Z" fill="#0066B6" fill-opacity="0.1" stroke="#0066B6"/>
+                          </svg>
+                          <span class="button-service__title">Подразделения</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="button-service">
+                      <a href="/section/filials.html" class="button-service__link">
+                        <div
+                          class="button-service__link-wrapper-intro button-service__link-wrapper"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none" class="button-service__icon">
+                            <path d="M11.7064 6.84118C14.6056 4.90398 18.0142 3.87 21.5011 3.87C23.8163 3.87 26.1088 4.32601 28.2478 5.212C30.3868 6.09797 32.3303 7.39663 33.9674 9.03372C35.6045 10.6708 36.9031 12.6143 37.7891 14.7533C38.6751 16.8922 39.1311 19.1848 39.1311 21.5C39.1311 24.9869 38.0971 28.3955 36.1599 31.2947C34.2227 34.1939 31.4693 36.4536 28.2478 37.788C25.0264 39.1224 21.4816 39.4715 18.0616 38.7913C14.6418 38.111 11.5004 36.4319 9.03479 33.9663C6.56923 31.5007 4.89012 28.3593 4.20986 24.9394C3.5296 21.5195 3.87874 17.9747 5.21311 14.7533C6.5475 11.5318 8.80718 8.77842 11.7064 6.84118ZM13.3786 33.6561C15.7829 35.2626 18.6095 36.12 21.5011 36.12C25.3786 36.12 29.0972 34.5797 31.839 31.8379C34.5808 29.0961 36.1211 25.3774 36.1211 21.5C36.1211 18.6084 35.2636 15.7818 33.6572 13.3776C32.0507 10.9733 29.7674 9.09943 27.0959 7.99289C24.4245 6.8863 21.4849 6.59683 18.6489 7.16093C15.8129 7.72503 13.2079 9.11743 11.1632 11.1621C9.11855 13.2067 7.72616 15.8118 7.162 18.6478C6.59789 21.4838 6.88743 24.4234 7.99396 27.0948C9.10055 29.7663 10.9744 32.0496 13.3786 33.6561Z" fill="#0066B6" fill-opacity="0.1" stroke="#0066B6"/>
+                            <path d="M21.5004 10.4634C19.7616 10.4636 18.094 11.1545 16.8645 12.384C15.6347 13.6138 14.9438 15.2817 14.9438 17.0209C14.9438 17.5721 15.1628 18.1007 15.5526 18.4904C15.9423 18.8803 16.4709 19.0992 17.0222 19.0992C17.5734 19.0992 18.102 18.8803 18.4917 18.4904C18.8815 18.1007 19.1005 17.5721 19.1005 17.0209C19.1005 16.546 19.2413 16.0819 19.5051 15.687C19.7689 15.2922 20.1439 14.9845 20.5826 14.8028C21.0212 14.6211 21.504 14.5735 21.9697 14.6661C22.4354 14.7588 22.8632 14.9874 23.199 15.3232C23.5347 15.659 23.7634 16.0868 23.856 16.5525C23.9487 17.0182 23.9011 17.5009 23.7194 17.9396C23.5377 18.3783 23.2299 18.7533 22.8351 19.0171C22.4404 19.2809 21.9762 19.4217 21.5013 19.4217C20.9501 19.4217 20.4215 19.6407 20.0317 20.0304C19.642 20.4202 19.423 20.9488 19.423 21.5V25.0834C19.423 25.6346 19.642 26.1632 20.0317 26.553C20.4215 26.9428 20.9501 27.1617 21.5013 27.1617C22.0525 27.1617 22.5812 26.9428 22.9709 26.553C23.3607 26.1632 23.5797 25.6346 23.5797 25.0834V23.2163C25.0058 22.7481 26.2299 21.8026 27.0432 20.5359C27.8954 19.2085 28.2391 17.6177 28.0109 16.0568C27.7827 14.4959 26.998 13.0702 25.8014 12.0422C24.605 11.0145 23.0776 10.4538 21.5004 10.4634Z" fill="#0066B6" fill-opacity="0.1" stroke="#0066B6"/>
+                            <path d="M23.0061 30.4583C23.0061 31.2895 22.3323 31.9633 21.5011 31.9633C20.6699 31.9633 19.9961 31.2895 19.9961 30.4583C19.9961 29.6271 20.6699 28.9533 21.5011 28.9533C22.3323 28.9533 23.0061 29.6271 23.0061 30.4583Z" fill="#0066B6" fill-opacity="0.1" stroke="#0066B6"/>
+                          </svg>
+                          <span class="button-service__title">Филиалы</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              </div>
+            </div>
+              
+
+            <!-- </div> -->
+          </section>
+          <section class="managements main-container">
+            <ul class="managements__list">
+              <li class="managements__item">
+                <div class="managements__wrapper">
+                  <img
+                    class="managements__image"
+                    src="<%=require('/src/assets/img/design/11.jpg')%>"
+                    alt="Фотография руководителя"
+                    width="286"
+                    height="429"
+                  />
+                  <div class="managements__content">
+                    <h3 class="managements__sn">
+                      Филимошин Роман Владимирович
+                    </h3>
+                    <p class="managements__title">Генеральный директор</p>
+                    <p class="managements__headline">
+                      Координирует и курирует:
+                    </p>
+                  
+                    <ul class="managements-department__list">
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Управление по работе с персоналом</a
+                        >
+                      </li>
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Управление государственного заказа</a
+                        >
+                      </li>
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Юридическое управление</a
+                        >
+                      </li>
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Управление делопроизводства</a
+                        >
+                      </li>
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Отдел дежурной службы и оповещения</a
+                        >
+                      </li>
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Отдел мобилизационной подготовки и гражданской
+                          обороны</a
+                        >
+                      </li>
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Отдел внутреннего аудита</a
+                        >
+                      </li>
+                    </ul>
+                    <button class="managements__open"></button>
+                  </div>
+                  <a href="#" class="managements__edit"
+                    >Редактировать карточку</a
+                  >
+                  <a href="/section/table.html" class="managements__link"></a>
+                </div>
+                <div class="managements__inner js-nodisplay-managements">
+                  <div class="managements__wrapper--inner">
+                    <p class="managements__headline">
+                      Родился 4 апреля 1968 года в городе Рязань.
+                    </p>
+                    <p class="managements__study">
+                      Окончил Московский авиационный институт им. Серго
+                      Орджоникидзе
+                    </p>
+                    <h3 class="managements-inner__title">
+                      Трудовая деятельсность связанная с налоговой службой:
+                    </h3>
+                    <ul class="managements-inner__list">
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">12.10.2010</span>
+                        <span class="managements-inner__description"
+                          >Генеральный директор<br />
+                          ФГУП «ГНИВЦ» ФНС России</span
+                        >
+                      </li>
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">03.10.2011</span>
+                        <span class="managements-inner__description"
+                          >Генеральный директор<br />
+                          Федеральное казенное учреждение «Налог-Сервис»
+                          Федеральной налоговой службы (г. Москва).</span
+                        >
+                      </li>
+                    </ul>
+                    <h3 class="managements-inner__title">Награды:</h3>
+                    <ul class="managements-inner__list">
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name"
+                          >Почётная грамота</span
+                        >
+                        <span class="managements-inner__description"
+                          >Министерства экономического развития и торговли
+                          Российской Федерации “за добросовестный труд в области
+                          землеустройства, безупречное выполнение должностных
+                          обязанностей, активное участие в реформировании
+                          земельных отношений”</span
+                        >
+                      </li>
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name"
+                          >Почётная грамота</span
+                        >
+                        <span class="managements-inner__description"
+                          >Федерального агенства кадастра объектов недвижимости
+                          “за большой вклад в развитие предприятия”</span
+                        >
+                      </li>
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name"
+                          >Благодарность</span
+                        >
+                        <span class="managements-inner__description"
+                          >Министра эконо­мического развития Российской
+                          Федерации</span
+                        >
+                      </li>
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">Медаль</span>
+                        <span class="managements-inner__description"
+                          >«За возвращение Крыма»</span
+                        >
+                      </li>
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">Медаль</span>
+                        <span class="managements-inner__description"
+                          >ФНС России<br />
+                          «25 лет налоговым органам России»</span
+                        >
+                      </li>
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">Медаль</span>
+                        <span class="managements-inner__description"
+                          >ФНС России<br />
+                          «За заслуги» II степени</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="managements__item">
+                <div class="managements__wrapper">
+                  <img
+                    class="managements__image"
+                    src="<%=require('/src/assets/img/design/22.jpg')%>"
+                    alt="Фотография руководителя"
+                    width="286"
+                    height="429"
+                  />
+                  <div class="managements__content">
+                    <h3 class="managements__sn">Гужев Вадим Дмитриевич</h3>
+                    <p class="managements__title">
+                      Заместитель генерального директора
+                    </p>
+                    <div class="managements__list-wrapper">
+                    <p class="managements__headline">
+                      Координирует и курирует:
+                    </p>
+                    <ul class="managements-department__list">
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Управление организации контроля деятельности
+                          филиалов</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="managements__list-wrapper">
+                    <p class="managements__headline">
+                      Основные виды деятельности:
+                    </p>
+                    <ul class="managements-department__list">
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Разработка методических материалов</a
+                        >
+                        <a href="#" class="managements-departments__link"
+                          >Молодёжный совет</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                    <button class="managements__open"></button>
+                  </div>
+                  <a href="#" class="managements__edit"
+                    >Редактировать карточку</a
+                  >
+                  <a href="/section/table.html" class="managements__link"></a>
+                </div>
+                <div class="managements__inner js-nodisplay-managements">
+                  <div class="managements__wrapper--inner">
+                    <p class="managements__headline">
+                      Родился 1 января 1959 года в Курганской области.
+                    </p>
+                    <p class="managements__study">
+                      Окончил Свердловский ордена Трудового Красного Знамени
+                      юридический институт им. Р.А. Руденко.
+                    </p>
+                    <h3 class="managements-inner__title">
+                      Трудовая деятельсность связанная с налоговой службой:
+                    </h3>
+                    <ul class="managements-inner__list">
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">12.10.2010</span>
+                        <span class="managements-inner__description"
+                          >Начальник инспекции<br />
+                          Межрегиональ инспекция ФНС России по Центральному
+                          федеральному округу</span
+                        >
+                      </li>
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">01.12.2016</span>
+                        <span class="managements-inner__description"
+                          >Заместитель гене­рального директора<br />
+                          Федеральное казенное учреждение «Налог-Сервис»
+                          Федеральной налоговой службы (г. Москва).</span
+                        >
+                      </li>
+                    </ul>
+                    <h3 class="managements-inner__title">Награды:</h3>
+                    <ul class="managements-inner__list">
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name"
+                          >Знак отличия</span
+                        >
+                        <span class="managements-inner__description"
+                          >ФНС России<br />
+                          «Почетный работник ФНС России»</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="managements__item">
+                <div class="managements__wrapper">
+                  <img
+                    class="managements__image"
+                    src="<%=require('/src/assets/img/design/33.jpg')%>"
+                    alt="Фотография руководителя"
+                    width="286"
+                    height="429"
+                  />
+                  <div class="managements__content">
+                    <h3 class="managements__sn">Ряснов Виктор Викторович</h3>
+                    <p class="managements__title">
+                      Заместитель генерального директора
+                    </p>
+                    <div class="managements__list-wrapper">
+                    <p class="managements__headline">
+                      Координирует и курирует:
+                    </p>
+                    <ul class="managements-department__list">
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Управление координации и развития ЦОД</a
+                        >
+                      </li>
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Управление информационной безопасности</a
+                        >
+                      </li>
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Управление сопровождения эксплуатации систем ЦОД</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="managements__list-wrapper">
+                    <p class="managements__headline">
+                      Основные виды деятельности:
+                    </p>
+                    <ul class="managements-department__list">
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Сопровождение технологической инфраструктуры Филиалов
+                          по ЦОД</a
+                        >
+                        <a href="#" class="managements-departments__link"
+                          >Обеспечение работы сервисов Федерального уровня</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                    <button class="managements__open"></button>
+                  </div>
+                  <a href="#" class="managements__edit"
+                    >Редактировать карточку</a
+                  >
+                  <a href="/section/table.html" class="managements__link"></a>
+                </div>
+                <div class="managements__inner js-nodisplay-managements">
+                  <div class="managements__wrapper--inner">
+                    <p class="managements__headline">
+                      Родился 9 марта 1969 года в Волгоградской области.
+                    </p>
+                    <p class="managements__study">
+                      Окончил Волгоградский государственный техниче­ский
+                      университет, Санкт-Петербургскую государственную академию.
+                    </p>
+                    <h3 class="managements-inner__title">
+                      Трудовая деятельсность связанная с налоговой службой:
+                    </h3>
+                    <ul class="managements-inner__list">
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">12.10.2003</span>
+                        <span class="managements-inner__description"
+                          >Начальник инспекции<br />
+                          Межрегиональная инспекция ФНС России по
+                          Централизованной обработке данных</span
+                        >
+                      </li>
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">01.09.2014</span>
+                        <span class="managements-inner__description"
+                          >Заместитель гене­рального директора<br />
+                          Федеральное казенное учреждение «Налог-Сервис»
+                          Федеральной налоговой службы (г. Москва).</span
+                        >
+                      </li>
+                    </ul>
+                    <h3 class="managements-inner__title">Награды:</h3>
+                    <ul class="managements-inner__list">
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name"
+                          >Медаль ордена</span
+                        >
+                        <span class="managements-inner__description"
+                          >«За заслуги перед Отечеством» II степени</span
+                        >
+                      </li>
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">Медаль</span>
+                        <span class="managements-inner__description"
+                          >ФНС России<br />
+                          «За заслуги» I степени</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="managements__item">
+                <div class="managements__wrapper">
+                  <img
+                    class="managements__image"
+                    src="<%=require('/src/assets/img/design/44.jpg')%>"
+                    alt="Фотография руководителя"
+                    width="286"
+                    height="429"
+                  />
+                  <div class="managements__content">
+                    <h3 class="managements__sn">Околева Ирина Владимировна</h3>
+                    <p class="managements__title">
+                      Советник генерального директора
+                    </p>
+                    <p class="managements__headline">
+                      Основные виды деятельности:
+                    </p>
+                    <ul class="managements-department__list">
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Обеспечение связи с общественностью (СМИ)</a
+                        >
+                      </li>
+                      <li class="managements-department__item">
+                        <a href="#" class="managements-departments__link"
+                          >Обеспечение взаимодействия с ФБПЛУ ФНС России</a
+                        >
+                      </li>
+                    </ul>
+                    <button class="managements__open"></button>
+                  </div>
+                  <a href="#" class="managements__edit"
+                    >Редактировать карточку</a
+                  >
+                  <a href="/section/table.html" class="managements__link"></a>
+                </div>
+                <div class="managements__inner js-nodisplay-managements">
+                  <div class="managements__wrapper--inner">
+                    <p class="managements__headline">
+                      Родилась 22 мая в г. Москве.
+                    </p>
+                    <p class="managements__study">
+                      Окончила Государственный Университет Управления имени С.
+                      Орджоникидзе по специальности: финансы и кредит,
+                      инновационный менеджмент.
+                    </p>
+                    <h3 class="managements-inner__title">
+                      Трудовая деятельсность связанная с налоговой службой:
+                    </h3>
+                    <ul class="managements-inner__list">
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">12.01.2012</span>
+                        <span class="managements-inner__description"
+                          >Советник генерального директора<br />Федеральное
+                          казенное учреждение «Налог-Сервис» Федеральной
+                          налоговой службы (г. Москва).</span
+                        >
+                      </li>
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name">03.10.2011</span>
+                        <span class="managements-inner__description"
+                          >Генеральный директор Федеральное казенное учреждение
+                          «Налог-Сервис» Федеральной налоговой службы (г.
+                          Москва).</span
+                        >
+                      </li>
+                    </ul>
+                    <h3 class="managements-inner__title">Награды:</h3>
+                    <ul class="managements-inner__list">
+                      <li class="managements-inner__item">
+                        <span class="managements-inner__name"
+                          >Знак отличия</span
+                        >
+                        <span class="managements-inner__description"
+                          >ФНС России<br />«Отличник ФНС России»</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <%= require('html-loader!../components/footer.html').default %>
+    </div>
+  </body>
+</html>

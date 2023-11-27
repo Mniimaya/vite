@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../../components/header.html').default %>
+      <main class="main">
+        <div class="main__wrapper">
+          <section class="intro">
+            <div class="intro__content">
+              <div class="container">
+                <h1 class="intro__title">Вакансии</h1>
+                <section class="popular">
+                  <div class="popular__wrapper popular__wrapper--secondary">
+                    <ul class="popular__list popular__list--vacancy">
+                      <li class="button-service button-service--vacancy">
+                        <a
+                          href="/service/vacancy.html"
+                          class="button-service__link"
+                        >
+                          <div
+                            class="button-service__link-wrapper button-service__link-wrapper-intro"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="43"
+                              height="43"
+                              viewBox="0 0 43 43"
+                              fill="none"
+                              class="button-service__icon button-service__icon--no-fill"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.10352 12.4956H36.8969C38.0116 12.4956 39.0807 12.9384 39.8689 13.7267C40.6572 14.5149 41.1 15.584 41.1 16.6987V34.3018C41.1 35.4166 40.6572 36.4857 39.8689 37.2739C39.0807 38.0622 38.0117 38.505 36.8969 38.505H6.10352C4.98878 38.505 3.91972 38.0622 3.13148 37.2739C2.34324 36.4857 1.90039 35.4166 1.90039 34.3018V16.6987C1.90039 15.584 2.34324 14.5149 3.13148 13.7267C3.91972 12.9384 4.98878 12.4956 6.10352 12.4956ZM27.0204 22.7585L39.4125 20.1022V16.6987C39.4125 16.0315 39.1475 15.3917 38.6757 14.9199C38.2039 14.4481 37.5641 14.1831 36.8969 14.1831H6.10352C5.43632 14.1831 4.7965 14.4481 4.32473 14.9199C3.85297 15.3917 3.58789 16.0315 3.58789 16.6987V20.1022L15.98 22.7585L16.038 22.2051C16.0592 22.0022 16.1545 21.8143 16.3056 21.6773C16.4563 21.5406 16.652 21.4642 16.8554 21.4624H26.1451C26.3485 21.4642 26.5442 21.5406 26.6949 21.6773C26.846 21.8143 26.9412 22.0022 26.9625 22.2051L27.0204 22.7585ZM25.3032 26.4599V23.1499H17.6973V26.4599H25.3032ZM4.43326 36.1767C4.89166 36.5881 5.48507 36.8171 6.10103 36.8202H36.8969C37.5635 36.8202 38.2029 36.5556 38.6745 36.0845C39.1462 35.6135 39.4116 34.9739 39.4125 34.3072V21.8314L26.9907 24.4941V27.3063C26.9907 27.53 26.9018 27.7447 26.7435 27.9029C26.5853 28.0611 26.3707 28.15 26.1469 28.15H16.8535C16.6297 28.15 16.4152 28.0611 16.2569 27.9029C16.0987 27.7447 16.0098 27.53 16.0098 27.3063V24.4941L3.58789 21.8314V32.7917L3.65051 32.9048C3.8588 33.2808 4.16362 33.5944 4.53354 33.8133C4.90345 34.0322 5.32509 34.1485 5.75494 34.1501H34.1436C34.1891 34.1501 34.2329 34.1683 34.2651 34.2005C34.2973 34.2327 34.3154 34.2764 34.3154 34.322C34.3154 34.3676 34.2973 34.4113 34.2651 34.4435C34.2328 34.4758 34.1891 34.4939 34.1436 34.4939H5.75824C5.26838 34.491 4.78835 34.356 4.36868 34.1033L3.49963 33.5799L3.61391 34.588C3.68331 35.2 3.97486 35.7653 4.43326 36.1767Z"
+                                fill="#0066B6"
+                              />
+                              <path
+                                d="M14.8704 5.47759C14.4581 5.88959 14.226 6.44832 14.2251 7.03121V9.18199C14.2251 9.40575 14.1362 9.62037 13.9779 9.77862C13.8197 9.93685 13.6051 10.0257 13.3813 10.0257C13.1576 10.0257 12.9429 9.93684 12.7847 9.77862C12.6265 9.6204 12.5376 9.40579 12.5376 9.18199V7.0323C12.5389 6.0018 12.949 5.0139 13.6778 4.28533C14.4066 3.55674 15.3946 3.147 16.4252 3.146H26.5754C27.6059 3.147 28.594 3.55674 29.3228 4.28533C30.0516 5.01397 30.4617 6.00199 30.463 7.03261V9.18199C30.463 9.40579 30.3741 9.6204 30.2158 9.77862C30.0576 9.93684 29.843 10.0257 29.6192 10.0257C29.3954 10.0257 29.1808 9.93685 29.0226 9.77862C28.8644 9.62037 28.7755 9.40575 28.7755 9.18199V7.03121C28.7745 6.44832 28.5425 5.88959 28.1301 5.47759C27.7178 5.06559 27.1585 4.83396 26.5756 4.8335L16.4245 4.8335C15.8416 4.83396 15.2827 5.06559 14.8704 5.47759Z"
+                                fill="#0066B6"
+                              />
+                            </svg>
+                            <span class="button-service__title">Вакансии</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="button-service button-service--vacancy">
+                        <a
+                          href="/service/vacancy/0005-form.html"
+                          class="button-service__link"
+                        >
+                          <div
+                            class="button-service__link-wrapper button-service__link-wrapper-intro"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="43"
+                              height="43"
+                              viewBox="0 0 43 43"
+                              fill="none"
+                              class="button-service__icon button-service__icon--no-fill"
+                            >
+                              <path
+                                d="M4.9001 8.0001C4.9001 6.28801 6.28802 4.9001 8.0001 4.9001H13.0001C13.4972 4.9001 13.9001 4.49715 13.9001 4.0001C13.9001 3.50304 13.4972 3.1001 13.0001 3.1001H8.0001C5.2939 3.1001 3.1001 5.2939 3.1001 8.0001V35.0001C3.1001 37.7063 5.2939 39.9001 8.0001 39.9001H35.0001C37.7063 39.9001 39.9001 37.7063 39.9001 35.0001V29.5001C39.9001 29.003 39.4972 28.6001 39.0001 28.6001C38.503 28.6001 38.1001 29.003 38.1001 29.5001V35.0001C38.1001 36.7122 36.7122 38.1001 35.0001 38.1001H8.0001C6.28801 38.1001 4.9001 36.7122 4.9001 35.0001V8.0001Z"
+                                fill="#0066B6"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M18.6836 31.4633L11.9397 33.4055C11.528 33.5207 11.0874 33.4679 10.7145 33.2586C10.3417 33.0494 10.0671 32.7007 9.95097 32.2892C9.86458 31.9934 9.86334 31.6792 9.94739 31.3827L11.9093 24.5027L31.4331 4.74237C31.8043 4.36855 32.2463 4.0724 32.7332 3.87117C33.2201 3.66995 33.7422 3.5677 34.269 3.57036C34.7958 3.57303 35.3169 3.68057 35.8017 3.88672C36.2866 4.09286 36.7255 4.39527 37.0929 4.77283L38.2306 5.92487C39.8001 7.51408 39.8145 10.078 38.2593 11.651L18.6836 31.4633ZM35.803 6.02822C35.5998 5.81942 35.3592 5.6545 35.0974 5.54321C34.8325 5.43056 34.5478 5.3718 34.2599 5.37034C33.972 5.36888 33.6867 5.42476 33.4207 5.53471C33.1552 5.64443 32.9141 5.8058 32.7115 6.00944L32.7102 6.01076L30.9018 7.84112L35.2233 12.1627L36.9789 10.3859C37.8282 9.52683 37.8397 8.09067 36.9499 7.18969L35.803 6.02822ZM13.5138 25.4397L29.8475 8.90817L34.169 13.2297L17.7336 29.8637L11.7619 31.5835L13.5138 25.4397Z"
+                                fill="#0066B6"
+                              />
+                            </svg>
+                            <span class="button-service__title"
+                              >Создать заявку</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+              <section
+                class="tab-section tab-section--vacancy vacancy-navigation"
+              >
+                <div class="tab-section__wrapper"></div>
+              </section>
+            </div>
+          </section>
+          <section class="vacancy vacancy--requests">
+            <div class="vacancy__wrapper">
+              <h2 class="visually-hidden">Мои заявки</h2>
+              <ul class="vacancy-list vacancy-list--requests"></ul>
+              <%=
+              require('html-loader!./templates/template-vacancy-empty.html').default
+              %> <%=
+              require('html-loader!./templates/template-vacancy-error.html').default
+              %>
+            </div>
+          </section>
+        </div>
+      </main>
+      <%= require('html-loader!../../components/footer.html').default %>
+    </div>
+  </body>
+</html>
+
+<!-- LOADER -->
+<%= require('html-loader!../../components/loader.html').default %>
+<!-- TEMPLATE VACANCY CARD REQUEST -->
+<%=
+require('html-loader!./templates/cards/request/template-card--request.html').default
+%>
+<!-- TEMPLATE MODAL APPROVE SHEET -->
+<%=
+require('html-loader!./templates/modals/approve-sheet/template-modal--approve-sheet.html').default
+%>
+<!-- TEMPLATE MODAL EDIT PARTICIPANTS -->
+<%=
+require('html-loader!./templates/modals/edit-participants/template-modal--edit-participants.html').default
+%>
+<!-- TEMPLATE HR-ACTIONS -->
+<%=
+require('html-loader!./templates/cards/request/helpers/template-vacancy-card--request--hr-actions.html').default
+%>
+<!-- TEMPLATE USER-ACTIONS -->
+<%=
+require('html-loader!./templates/cards/request/helpers/template-vacancy-card--request--user-actions.html').default
+%>

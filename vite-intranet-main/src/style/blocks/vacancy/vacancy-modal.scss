@@ -1,0 +1,271 @@
+.vacancy-modal {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(29, 47, 73, 0.1);
+  border-radius: 30px;
+  max-height: 90vh;
+
+  &--main {
+    width: 600px;
+    min-height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .vacancy-modal__text {
+      color: $color-blue-dark;
+      text-align: center;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+  &--approve-sheet {
+    width: 780px;
+
+    .vacancy-modal__wrapper {
+      position: relative;
+      padding: 40px;
+    }
+
+    .vacancy-modal__header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    .vacancy-modal__title {
+      color: $color-blue-dark;
+      text-align: center;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 10px;
+    }
+
+    .vacancy-modal__sono {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 5px;
+      color: rgba($color: $color-blue-dark, $alpha: 0.8);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .vacancy-modal__main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .vacancy-modal__main-title {
+      color: $color-blue-dark;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 25px;
+    }
+
+    .vacancy-modal__list--approve {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+    }
+
+    .vacancy-modal__item--approve {
+      display: flex;
+      align-items: center;
+    }
+
+    .vacancy-modal__avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        background: lightgray -17.5px 0px / 161.25% 107.5% no-repeat;
+        box-shadow: 0px 0px 6px 0px rgba(29, 47, 73, 0.4);
+      }
+    }
+
+    .vacancy-modal__fullname {
+      color: $color-blue-dark;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      margin-right: 50px;
+      text-align: center;
+    }
+
+    .vacancy-modal__position {
+      min-width: 150px;
+      color: rgba($color: $color-blue-dark, $alpha: 0.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+    }
+
+    .vacancy-modal__actions {
+      width: 190px;
+      margin-left: auto;
+    }
+
+    .vacancy-modal__buttons--variants {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .vacancy-modal__status {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+
+      &--approve {
+        color: #0bae2f;
+      }
+
+      &--reject {
+        color: #d71920;
+      }
+
+      &--on-approval {
+        color: #f6c218;
+      }
+    }
+
+    .vacancy-modal__button-approve,
+    .vacancy-modal__button-reject {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 90px;
+      border-radius: 10px;
+      padding: 6px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .vacancy-modal__button-approve {
+      color: #0bae2f;
+      border: 1px solid #0bae2f;
+    }
+
+    .vacancy-modal__button-reject {
+      color: #d71920;
+      border: 1px solid #d71920;
+    }
+
+    .vacancy-modal__button-post-vacancy,
+    .vacancy-modal__button-close-vacancy {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 190px;
+      border-radius: 10px;
+      color: $color-blue;
+      border: 1px solid $color-blue;
+      padding: 6px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .vacancy-modal__close {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+  }
+
+  &--edit-participants {
+    width: 780px;
+
+    .vacancy-modal__wrapper {
+      position: relative;
+      padding: 40px;
+    }
+
+    .vacancy-modal__header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    .vacancy-modal__title {
+      color: $color-blue-dark;
+      text-align: center;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 10px;
+    }
+
+    .vacancy-modal__sono {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 5px;
+      color: rgba($color: $color-blue-dark, $alpha: 0.8);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .vacancy-modal__main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .vacancy-modal__main-title {
+      color: $color-blue-dark;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+
+    .vacancy-modal__close {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+  }
+
+  &--reply {
+    width: 780px;
+
+    .vacancy-modal__wrapper {
+      position: relative;
+      padding: 40px 30px 40px 30px;
+    }
+
+    .vacancy-modal__header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    .vacancy-modal__title {
+      color: $color-blue-dark;
+      text-align: center;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 10px;
+    }
+
+    .vacancy-modal__row {
+      display: flex;
+      column-gap: 20px;
+    }
+  }
+}

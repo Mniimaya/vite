@@ -1,0 +1,50 @@
+.social__list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s ease;
+}
+
+.social__link:hover {
+  svg path {
+    fill:#f15a22;
+  }
+}
+
+.social__link--goverment:before {
+  position: absolute;
+  content: "";
+  // background-image: url("/src/assets/img/footer/goverment.svg");
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+
+.social__link--nalog:before {
+  position: absolute;
+  content: "";
+  // background-image: url("/src/assets/img/footer/fns.svg");
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+
+.social__icon {
+  fill: #3b4256;
+}
+
+.social__icon:hover {
+  fill: #f15a22;
+}

@@ -1,0 +1,14 @@
+.vacancy-form-items {
+  display: flex;
+  flex-direction: column;
+
+  &--location-main {
+    display: flex;
+    padding: 0 40px;
+  }
+
+  &--location-additional {
+    display: flex;
+    padding-left: 40px;
+  }
+}

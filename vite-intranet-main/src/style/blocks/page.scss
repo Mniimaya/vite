@@ -1,0 +1,9 @@
+.page__body {
+  text-align: left;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.page__body--noscroll {
+  overflow: hidden;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интранет ФКУ "Налог-сервис"</title>
+  </head>
+
+  <body class="page__body">
+    <div class="body-container">
+      <%= require('html-loader!../../components/header.html').default %>
+      <main class="main">
+        <div class="main__wrapper">
+          <section class="intro">
+            <div class="intro__content">
+              <div class="container">
+              <h1 class="intro__title">Документы</h1>
+              </div>
+              <section class="tab-section tab-section--vacancy vacancy-navigation">
+                <div class="tab-section__wrapper">
+                  <button class="tab">Добавить документ</button>
+                  <button class="tab">Мои документы</button>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <section class="document-preview-container">
+            <div class="document-preview">
+              <div class="document-preview-intro">
+                <div class="document-preview-intro__date">
+                  Дата публикации: 24.01.2023
+                </div>
+                <div class="document-preview-intro__actions">
+                  <button>Информация</button>
+                  <button>Печать</button>
+                </div>
+              </div>
+              <header class="document-preview-header">
+                <div class="document-preview-header__logo">
+                  <img src="" alt="Логотип" />
+                </div>
+                <h2 class="document-preview-header__title">
+                  О федеральном бюджетном учреждении «Налог-Сервис» Федеральной
+                  Налоговой службы
+                </h2>
+              </header>
+              <main class="document-preview-main">
+                B целях совершенствования организационно-технического и
+                информационного обеспечения деятельности ФНС России и ее
+                территориальных органов, приказываю: 1. Переименовать
+                Федеральное бюджетное образовательное учреждение дополнительного
+                профессионального образования «Учебный центр по информатизации
+                Федеральной налоговой службы», г. Обнинск, Калужская область в
+                Федеральное бюджетное учреждение «Налог-Сервис» Федеральной
+                налоговой службы, определив, что предметом и целями деятельности
+                данного учреждения являются организационно-техническое и
+                информационное обеспечение деятельности ФНС России и ее
+                территориальных органов, а также осуществление дополнительного
+                профессионального образования федеральных государственных
+                гражданских служащих системы налоговых органов Российской
+                Федерации. 2.ФНС России: осуществлять функции и полномочия
+                учредителя федерального бюджетного учреждения, указанного в
+                пункте 1 настоящего приказа; обеспечить в месячный срок внесение
+                изменений в устав федерального бюджетного учреждения, указанного
+                в пункте 1 настоящего приказа, и осуществить в 3-месячный срок
+                иные необходимые мероприятия, связанные с реализацией пункта 1
+                настоящего приказа, в пределах бюджетных ассигнований
+                федерального бюджета, предусмотренных ФНС России в 2011 году на
+                руководство и управление в сфере установленных функций и
+                обеспечение деятельности федерального бюджетного учреждения,
+                указанного в пункте 1 настоящего приказа, исходя из того, что
+                предельная численность работников данного федерального
+                бюджетного учреждения составляет 2215 единиц.
+              </main>
+              <footer class="document-preview-footer">
+                <p class="document-preview-footer__company">
+                  Руководитель Федеральной налоговой службы
+                </p>
+                <p class="document-preview-footer__manager">М.В.Мишустин</p>
+              </footer>
+            </div>
+          </section>
+        </div>
+      </main>
+      <%= require('html-loader!../../components/footer.html').default %>
+    </div>
+  </body>
+</html>

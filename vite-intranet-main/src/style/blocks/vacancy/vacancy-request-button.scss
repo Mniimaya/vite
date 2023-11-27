@@ -1,0 +1,79 @@
+.vacancy-request-button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+  }
+
+  &--approve,
+  &--reject {
+    box-sizing: border-box;
+    width: 90px;
+    padding: 6px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+  }
+
+  &--approve {
+    color: #0BAE2F;
+    border-color: #0BAE2F;
+
+    &:hover {
+      color: #FFF;
+      background-color: #0BAE2F;
+      opacity: 1;
+    }
+  }
+
+  &--reject {
+    color: #D71920;
+    border-color: #D71920;
+
+    &:hover {
+      color: #FFF;
+      background-color: #D71920;
+      opacity: 1;
+    }
+  }
+
+  &--post-vacancy,
+  &--close-vacancy {
+    width: 190px;
+    padding: 6px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border: 1px solid#0066B3;
+    border-radius: 10px;
+    color: #0066B3;
+
+    &:hover {
+      color: #fff;
+      background-color: #0066B3;
+      opacity: 1;
+    }
+  }
+
+  &--post-vacancy[disabled] {
+    color: #006C9E;
+    border-color: #006C9E;
+
+    &:hover {
+      opacity: 0.5;
+      color: #006C9E;
+      background-color: #FFF
+    }
+  }
+}

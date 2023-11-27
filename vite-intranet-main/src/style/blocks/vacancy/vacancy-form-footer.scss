@@ -1,0 +1,10 @@
+.vacancy-form-footer {
+  &__wrapper {
+    padding: 40px 40px 0;
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 25px;
+  }
+}

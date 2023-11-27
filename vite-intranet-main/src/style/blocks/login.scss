@@ -1,0 +1,24 @@
+.login__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+  padding-top: 150px;
+  color: #3b4255;
+}
+
+.login__form {
+  max-width: 450px;
+  max-height: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__input {
+  margin-bottom: 30px;
+}
+
+.login__submit {
+  margin: 0 auto;
+  max-width: 200px;
+}

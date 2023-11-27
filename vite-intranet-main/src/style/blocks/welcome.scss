@@ -1,0 +1,23 @@
+.welcome {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  padding: 50px 20px 100px;
+  border-radius: 20px;
+}
+
+.welcome__description {
+  text-align: justify;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.welcome__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 30px;
+  text-align: center;
+}
